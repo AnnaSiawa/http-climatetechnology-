@@ -28,11 +28,41 @@
 
 <div class="wrapper">
 	<header class="header">
-		<div class="menu__burger">
-			<div class="menu__icon icon-menu">
-				<span></span>
-				<span></span>
-				<span></span>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="menu__burger">
+					<div class="menu__icon icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<nav class="menu">
+					<a href="/" class="cell">«Технология климата»</a>
+					<ul class="menu__list">
+						<li>
+							<a href="#" class="nav-item">Услуги</a>
+							<div class="submenu">
+								<ul class="submenu__list">
+									<li><a href="#">Замеры</a></li>
+									<li><a href="#">Монтаж</a></li>
+									<li><a href="#">Обслуживание</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#" class="nav-item">Каталог</a></li>
+						<li><a href="#" class="nav-item">Контакты</a></li>
+					</ul>
+					<div class="cell">Брянск, тел. <a href="tel:+74832300126">30-01-26</a></div>
+				</nav>
 			</div>
+
+
 		</div>
-	</header>
+</div>
+
+
+</header>
