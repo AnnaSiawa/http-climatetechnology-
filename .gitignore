@@ -1,0 +1,91 @@
+# -----------------------------------------------------------------
+# .gitignore for WordPress
+# Bare Minimum Git
+# http://ironco.de/bare-minimum-git/
+# ver 20150227
+
+
+/*
+wp-activate.php
+!wp-content/
+!.env.example
+wp-content/uploads/*
+wp-content/cache/
+wp-content/plugins
+wp-content/index.php
+wp-content/themes/index.php
+wp-content/themes/myusa/webpack.brs.config.js
+wp-content/themes/myusa/dist
+
+/.idea
+/.vscode
+/.vagrant
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!readme.md
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore these plugins from the core
+wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# ignore node/grunt dependency directories
+node_modules/
+wp-content/plugins/imagify/*
+wp-content/languages
+wp-content/themes/myusa/vendor
+
+# favicons
+!browserconfig.xml
+!android-chrome*.png
+!favicon*.png
+!apple-touch-*.png
+!favicon.ico
+!favicon-*.png
+!mstile-*.png
+!safari-pinned-tab.svg
+!site.webmanifest
+wp-content/db.php

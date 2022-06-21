@@ -1,0 +1,108 @@
+@import './fonts';
+@import './modules/fonts';
+//@import './modules/vars';
+@import './modules/breakpoints';
+@import './modules/colors';
+
+:root {
+  --height-header-top: 48px;
+  --height-header-bottom: 76px;
+  --height-header-bottom-mobile-L: 123px;
+  --height-header-bottom-tablet-S: 140px;
+  --height-header-bottom-desktop-S: 183px;
+}
+
+*, *:before, *::before, *:after, *::after {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  //color: $color-red;
+  text-decoration: none;
+
+  &:hover {
+    //color: $color-red;
+    text-decoration: none;
+  }
+}
+
+.single-link {
+  //color: $color-black;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
+  zoom: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: $thirdFont;
+  position: relative;
+}
+
+html.lock, body.lock {
+  overflow-y: hidden;
+  position: fixed;
+  height: 100vh;
+}
+
+td > ul {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+@import '../../node_modules/swiper/swiper';
+@import '../../node_modules/simplebar/src/simplebar';
+@import '../../node_modules/tippy.js/dist/tippy.css';
+@import '../../node_modules/tippy.js/animations/scale.css';
+@import '../../node_modules/tippy.js/themes/light-border.css';
+
+@import './ui';
+@import './simplebar-override';
+@import './pagination';
+
+@import './header';
+@import './footer';
+
+@import './pages/page-homepage';

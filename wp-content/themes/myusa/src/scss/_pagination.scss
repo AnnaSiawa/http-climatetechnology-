@@ -1,0 +1,110 @@
+//@import './modules/vars';
+//@import './modules/functions';
+//
+//.pagination {
+//  display: inline-flex;
+//  background-color: #ffe9ea;
+//  margin-left: auto;
+//  margin-right: auto;
+//  margin-top: 30px;
+//  flex-flow: row nowrap;
+//  justify-content: center;
+//  align-items: center;
+//  @media screen and (min-width: $width-tablet-S) {
+//    margin-top: 50px;
+//  }
+//  @media screen and (min-width: $width-desktop-S) {
+//    margin-top: 80px;
+//  }
+//  @media screen and (min-width: $width-desktop-L) {
+//    margin-top: 100px;
+//  }
+//
+//  &-box {
+//    text-align: center;
+//  }
+//
+//  &-nav {
+//    cursor: pointer;
+//  }
+//
+//  &_prev, &_next {
+//    display: block;
+//    font-size: 28px;
+//    line-height: 1em;
+//    padding: 10px 8px;
+//    margin: 0;
+//    background-color: transparent;
+//    color: white;
+//    text-decoration: none;
+//    border: 0 none;
+//    @media screen and (min-width: $width-tablet-S) {
+//      padding: 16px 14px;
+//    }
+//
+//    svg {
+//      display: block;
+//      width: 18px;
+//      max-width: 100px;
+//      height: auto;
+//      @media screen and (min-width: $width-tablet-S) {
+//        width: 26px;
+//      }
+//
+//      path {
+//        fill: white;
+//      }
+//    }
+//  }
+//
+//  &_prev {
+//    background-color: black;
+//  }
+//
+//  &_next {
+//    background-color: #b5191a;
+//  }
+//
+//  &_pages {
+//    padding: 6px 12px;
+//    font-size: 12px;
+//    line-height: 1em;
+//    font-family: $font-NHaasGroteskTXPro65Md;
+//    display: flex;
+//    flex-flow: row nowrap;
+//    justify-content: center;
+//    align-items: center;
+//    @media screen and (min-width: $width-tablet-S) {
+//      font-size: 22px;
+//      padding: 6px 34px;
+//    }
+//  }
+//
+//  &-page {
+//    display: inline-block;
+//    background-color: transparent;
+//    border: 0 none;
+//    color: black;
+//    text-decoration: none;
+//    padding: 6px 4px;
+//    cursor: pointer;
+//    font-size: inherit;
+//    font-weight: inherit;
+//    font-family: inherit;
+//    @media screen and (min-width: $width-mobile-S) {
+//      padding: 6px 6px;
+//    }
+//    @media screen and (min-width: $width-tablet-S) {
+//      padding: 8px 12px;
+//      margin: 0 2px;
+//    }
+//
+//    &__current {
+//      background-color: rgba(204, 203, 224, 1);
+//    }
+//
+//    &:hover {
+//      background-color: rgba(204, 203, 224, 0.4);
+//    }
+//  }
+//}
