@@ -7,7 +7,7 @@
 
 <?php get_header(); ?>
 
-<div class="content" style="color: black">
+<div class="content">
 	<div class="homepage">
 		homepage
 	</div>

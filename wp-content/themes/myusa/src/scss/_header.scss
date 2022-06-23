@@ -4,6 +4,7 @@
 @import "./modules/breakpoints";
 
 .header {
+  color: $color-white;
   background-color: $color-dark;
   width: 100%;
 }
@@ -15,7 +16,6 @@
     justify-content: flex-start;
     padding: 0 10px 0 0;
     flex: 0 1 11%;
-    background-color: $color-white;
     cursor: pointer;
     z-index: 3;
     //@media all and (min-width: $width-tablet-S) {
