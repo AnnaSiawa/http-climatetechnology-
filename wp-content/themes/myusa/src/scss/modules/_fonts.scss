@@ -1,11 +1,6 @@
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
 sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-SofiaProRegular: "SofiaProRegular", $font-family-sans-serif;
-$font-SofiaProSemiBold: "SofiaProSemiBold", $font-family-sans-serif;
-$font-SofiaProLight: "SofiaProLight", $font-family-sans-serif;
-$font-NHaasGroteskTXPro65Md: "NHaasGroteskTXPro-65Md", $font-family-sans-serif;
-$font-NHaasGroteskTXPro75Bd: "NHaasGroteskTXPro-75Bd", $font-family-sans-serif;
+$font-Inter: "Inter", $font-family-sans-serif;
 
-$primaryFont: $font-SofiaProRegular;
-$secondaryFont: $font-SofiaProSemiBold;
-$thirdFont: $font-NHaasGroteskTXPro65Md;
+//$primaryFont: $font-SofiaProRegular;
+$secondaryFont: $font-Inter;

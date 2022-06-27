@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 	<link rel="preload" href="/wp-content/themes/myusa/dist/fonts/NHaasGroteskTXPro-65Md.woff2" as="font"
 		  type="font/woff"
 		  crossorigin="anonymous">
@@ -27,50 +30,60 @@
 <body <?php body_class(); ?>>
 
 <div class="wrapper">
+	<!--ограничение по высоте и фон-->
 	<header class="header">
-			<div class="row">
-
-				<div class="menu__burger">
-					<div class="menu__icon icon-menu">
-						<span></span>
-						<span></span>
-						<span></span>
+		<!--ограничение по ширине-->
+			<div class="header__row">
+				<!--внутренний контейнер-->
+				<div class="inner">
+					<div class="menu__burger">
+						<div class="menu__icon icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
-				</div>
 
-				<nav class="menu">
-					<a href="/" class="cell">«Технология климата»</a>
-					<ul class="menu__list">
-						<li>
-							<a href="#" class="nav-item">Услуги</a>
-							<div class="submenu">
-								<ul class="submenu__list">
-									<li><a href="#">Замеры</a></li>
-									<li><a href="#">Монтаж</a></li>
-									<li><a href="#">Обслуживание</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="#" class="nav-item">Каталог</a></li>
-						<li><a href="#" class="nav-item">Контакты</a></li>
-					</ul>
-					<div class="cell">
+					<div class="menu-cell">
 						<span>Брянск, тел. </span>
 						<a href="tel:+74832300126">30-01-26</a>
 					</div>
-				</nav>
 
-				<nav class="mobile-menu">
-					<a href="/" class="cell">«Технология климата»</a>
-					<ul class="menu__list">
-						<li><a href="#" class="nav-item">Каталог</a></li>
-						<li><a href="#" class="nav-item">Замеры</a></li>
-						<li><a href="#" class="nav-item">Монтаж</a></li>
-						<li><a href="#" class="nav-item">Обслуживание</a></li>
-						<li><a href="#" class="nav-item">Наши фото</a></li>
-						<li><a href="#" class="nav-item">Контакты</a></li>
-					</ul>
-				</nav>
+					<nav class="mobile-menu">
+						<a href="/" class="cell">«Технология климата»</a>
+						<ul class="menu__list">
+							<li><a href="#" class="nav-item">Каталог</a></li>
+							<li><a href="#" class="nav-item">Замеры</a></li>
+							<li><a href="#" class="nav-item">Монтаж</a></li>
+							<li><a href="#" class="nav-item">Обслуживание</a></li>
+							<li><a href="#" class="nav-item">Наши фото</a></li>
+							<li><a href="#" class="nav-item">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<nav class="desktop-menu">
+						<a href="/" class="cell">«Технология климата»</a>
+						<ul class="menu__list">
+							<li>
+								<a href="#" class="nav-item">Услуги</a>
+								<div class="submenu">
+									<ul class="submenu__list">
+										<li><a href="#">Замеры</a></li>
+										<li><a href="#">Монтаж</a></li>
+										<li><a href="#">Обслуживание</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#" class="nav-item">Каталог</a></li>
+							<li><a href="#" class="nav-item">Контакты</a></li>
+						</ul>
+						<div class="cell">
+							<span>Брянск, тел. </span>
+							<a href="tel:+74832300126">30-01-26</a>
+						</div>
+					</nav>
+
+				</div>
 			</div>
 	</header>
 
