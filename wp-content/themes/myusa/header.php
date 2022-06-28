@@ -48,8 +48,7 @@
 					</div>
 
 					<div class="mobile-menu-cell">
-						<span>Брянск, тел. </span>
-						<a href="tel:+74832300126">30-01-26</a>
+						<a href="tel:+74832300126">Брянск, тел. 30-01-26</a>
 					</div>
 
 					<nav class="mobile-menu">
@@ -65,7 +64,7 @@
 					</nav>
 
 					<nav class="desktop-menu">
-						<a href="/" class="desktop-menu__cell">«Технология климата»</a>
+						<a href="/" class="desktop-menu__title">«Технология климата»</a>
 						<ul class="desktop-menu__list">
 							<li>
 								<a href="#" class="nav-item">Услуги</a>
@@ -80,9 +79,8 @@
 							<li><a href="#" class="nav-item">Каталог</a></li>
 							<li><a href="#" class="nav-item">Контакты</a></li>
 						</ul>
-						<div class="cell">
-							<span>Брянск, тел. </span>
-							<a href="tel:+74832300126">30-01-26</a>
+						<div class="desktop-menu__cell">
+							<a href="tel:+74832300126">Брянск, тел. 30-01-26</a>
 						</div>
 					</nav>
 
