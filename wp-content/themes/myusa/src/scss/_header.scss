@@ -13,23 +13,34 @@
   color: $color-white;
   background-color: $color-dark;
   width: 100%;
+  min-height: 35px;
+
+  &__row {
+    width: 100%;
+  }
 
   .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
     padding: 10px 15px;
+
+    @media all and (min-width: $breakpoint-tablet-M) {
+      padding: 20px 70px;
+    }
   }
 
-  .menu-cell {
+  .mobile-menu-cell {
     opacity: 1;
     transition: opacity 0.4s;
     pointer-events: visible;
 
+    @media all and (min-width: $breakpoint-tablet-M) {
+      display: none;
+    }
+
     span, a {
       color: $color-white;
-      //font-family: $secondaryFont;
       font-family: $secondaryFont;
 
     }
@@ -44,12 +55,48 @@
 
 .desktop-menu {
   display: none;
+  @media all and (min-width: $breakpoint-tablet-M) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__cell {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .mobile-menu {
   display: none;
   font-family: $primaryFont;
   padding: 10px 15px;
+
+  &__title {
+    margin: 0 auto 51px;
+    width: 100%;
+    max-width: 375px;
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-grey;
+  }
+
+  &__list {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+
+    li {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .mobile-menu.active {
@@ -62,20 +109,6 @@
   top: var(--height-header-mobile);
 }
 
-.cell {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 375px;
-  display: block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-grey;
-}
-
 .menu {
   &__burger {
     display: flex;
@@ -85,9 +118,9 @@
     flex: 0 1 11%;
     cursor: pointer;
     z-index: 3;
-    //@media all and (min-width: $width-tablet-S) {
-    //  display: none;
-    //}
+    @media all and (min-width: $breakpoint-tablet-M) {
+      display: none;
+    }
   }
 
   &__icon {

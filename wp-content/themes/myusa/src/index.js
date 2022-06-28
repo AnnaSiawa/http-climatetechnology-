@@ -3,7 +3,7 @@ import './scss/index.scss';
 window.onload = function () {
     const iconMenu = document.querySelector('.menu__icon');
     const bodyMenu = document.querySelector('.mobile-menu');
-    const menuCell = document.querySelector('.menu-cell');
+    const menuCell = document.querySelector('.mobile-menu-cell');
 
     const toggleMenu = () => {
         document.body.classList.toggle('lock');

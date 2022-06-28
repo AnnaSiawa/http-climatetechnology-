@@ -23,7 +23,7 @@ html, body {
   font-size: 14px;
   color: #fff;
   //background-color: ;
-  //font-family: $primaryFont;
+  font-family: $primaryFont;
 }
 
 body {
@@ -50,6 +50,12 @@ html.lock, body.lock {
   flex-direction: column;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 td > ul {
   margin: 0;
 }
@@ -59,11 +65,12 @@ p {
 }
 
 a {
-  //color: $color-red;
+  color: $color-white;
   text-decoration: none;
+  transition: color 0.4s;
 
   &:hover {
-    //color: $color-red;
+    color: $color-blue;
     text-decoration: none;
   }
 }
@@ -79,7 +86,7 @@ input[type=number] {
 }
 
 .container {
-  max-width: 1778px;
+  max-width: 1920px; // -140px padding = 1778px по макету
   width: 100%;
   margin: 0 auto;
 }

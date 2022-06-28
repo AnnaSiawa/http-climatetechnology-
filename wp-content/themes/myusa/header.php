@@ -36,7 +36,7 @@
 	<!--ограничение по высоте и фон-->
 	<header class="header">
 		<!--ограничение по ширине-->
-			<div class="header__row">
+			<div class="header__row container">
 				<!--внутренний контейнер-->
 				<div class="inner">
 					<div class="menu__burger">
@@ -47,14 +47,14 @@
 						</div>
 					</div>
 
-					<div class="menu-cell">
+					<div class="mobile-menu-cell">
 						<span>Брянск, тел. </span>
 						<a href="tel:+74832300126">30-01-26</a>
 					</div>
 
 					<nav class="mobile-menu">
-						<a href="/" class="cell">«Технология климата»</a>
-						<ul class="menu__list">
+						<a href="/" class="mobile-menu__title">«Технология климата»</a>
+						<ul class="mobile-menu__list">
 							<li><a href="#" class="nav-item">Каталог</a></li>
 							<li><a href="#" class="nav-item">Замеры</a></li>
 							<li><a href="#" class="nav-item">Монтаж</a></li>
@@ -65,8 +65,8 @@
 					</nav>
 
 					<nav class="desktop-menu">
-						<a href="/" class="cell">«Технология климата»</a>
-						<ul class="menu__list">
+						<a href="/" class="desktop-menu__cell">«Технология климата»</a>
+						<ul class="desktop-menu__list">
 							<li>
 								<a href="#" class="nav-item">Услуги</a>
 								<div class="submenu">
