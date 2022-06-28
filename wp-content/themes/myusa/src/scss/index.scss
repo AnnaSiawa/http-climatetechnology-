@@ -4,14 +4,6 @@
 @import './modules/breakpoints';
 @import './modules/colors';
 
-:root {
-  --height-header-top: 48px;
-  --height-header-bottom: 76px;
-  --height-header-bottom-mobile-L: 123px;
-  --height-header-bottom-tablet-S: 140px;
-  --height-header-bottom-desktop-S: 183px;
-}
-
 *, *:before, *::before, *:after, *::after {
   box-sizing: border-box;
   outline: none;

@@ -5,7 +5,7 @@
 @import "./modules/breakpoints";
 
 :root {
-  --height-header-mobile: 40px;
+  --height-header-mobile: 35px;
   --height-header-desktop: 70px;
 }
 
@@ -18,17 +18,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
     padding: 10px 15px;
   }
+
   .menu-cell {
+    opacity: 1;
+    transition: opacity 0.4s;
+    pointer-events: visible;
+
     span, a {
       color: $color-white;
       //font-family: $secondaryFont;
       font-family: $secondaryFont;
+
     }
   }
-}
 
+  .menu-cell.active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 
 
 .desktop-menu {
@@ -37,6 +48,32 @@
 
 .mobile-menu {
   display: none;
+  font-family: $primaryFont;
+  padding: 10px 15px;
+}
+
+.mobile-menu.active {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - #{var(--height-header-mobile)});
+  background-color: $color-dark;
+  left: 0;
+  top: var(--height-header-mobile);
+}
+
+.cell {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 375px;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-grey;
 }
 
 .menu {
@@ -87,7 +124,7 @@
     }
   }
 
-  &__icon._active {
+  &__icon.active {
     span {
       &:nth-child(1) {
         top: 6.9px;
