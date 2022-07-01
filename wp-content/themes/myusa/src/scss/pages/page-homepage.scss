@@ -1,3 +1,37 @@
 @import "../modules/vars";
 @import "../modules/functions";
 
+
+.content {
+
+}
+
+.homepage {
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner1 {
+  position: relative;
+  z-index: 1;
+  flex: 0 1 37%;
+  background-color: #fff8e6;
+
+  &::before {
+    background-color: #fff8e6;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    left: -100%;
+  }
+}
+
+.inner2 {
+  flex: 0 1 63%;
+}

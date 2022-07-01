@@ -13,10 +13,17 @@
   color: $color-white;
   background-color: $color-dark;
   width: 100%;
-  min-height: 35px;
+  min-height: var(--height-header-mobile);
+  @media all and (min-width: $breakpoint-tablet-M) {
+    min-height: var(--height-header-desktop);
+  }
 
   &__row {
     width: 100%;
+    @media all and (min-width: $breakpoint-tablet-M) {
+      min-height: calc(#{var(--height-header-desktop)} / 2);
+      margin: 17.5px auto; //  min-height / 2 = 17.5px
+    }
   }
 
   .inner {
@@ -24,10 +31,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 0;
 
     @media all and (min-width: $breakpoint-tablet-M) {
-      padding: 20px 70px;
+      //padding: 20px 70px;
     }
   }
 
@@ -64,18 +71,18 @@
   }
 
   &__title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    transform: translateY(-6px);
   }
 
   &__cell {
     position: absolute;
     right: 0;
-    top: 0;
+    transform: translateY(-14px);
+
     span, a {
       color: $color-white;
       font-family: $secondaryFont;

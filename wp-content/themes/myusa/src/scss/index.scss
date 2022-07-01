@@ -88,9 +88,13 @@ input[type=number] {
 }
 
 .container {
-  max-width: 1920px; // -140px padding = 1778px по макету
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+  @media all and (min-width: $breakpoint-tablet-M) {
+    padding: 0 70px;
+    max-width: 1920px; // = 1780px (width) + 140px (padding)
+  }
 }
 
 .content {
