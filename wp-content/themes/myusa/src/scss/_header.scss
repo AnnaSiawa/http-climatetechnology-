@@ -20,6 +20,7 @@
   }
 
   .inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,19 +56,26 @@
 .desktop-menu {
   display: none;
   @media all and (min-width: $breakpoint-tablet-M) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    display: block;
     width: 100%;
   }
 
   &__title {
+    position: absolute;
+    top: 0;
+    left: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
   }
 
   &__cell {
+    position: absolute;
+    right: 0;
+    top: 0;
     span, a {
       color: $color-white;
       font-family: $secondaryFont;
@@ -78,6 +86,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
   }
 
   .submenu {
