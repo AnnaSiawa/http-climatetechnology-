@@ -116,6 +116,13 @@ input[type=number] {
   color: $color-dark;
 }
 
+.homepage-screen {
+  margin-bottom: 60px;
+  @media all and (min-width: $breakpoint-tablet-M) {
+    margin-bottom: 200px;
+  }
+}
+
 
 @import '../../node_modules/swiper/swiper';
 @import '../../node_modules/simplebar/src/simplebar';

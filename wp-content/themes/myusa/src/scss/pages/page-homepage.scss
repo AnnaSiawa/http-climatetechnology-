@@ -7,8 +7,12 @@
   height: 100%;
   background: url("../img/background-main-screen.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: 100%;
+  @media all and (min-width: $breakpoint-tablet-M) {
+    min-height: 940px;
+    background: url("../img/background-desktop-main-screen.png");
+  }
 
   h1 {
     padding: 197px 0 10px;
