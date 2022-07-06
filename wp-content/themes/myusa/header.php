@@ -66,7 +66,7 @@
 					<nav class="desktop-menu">
 						<a href="/" class="desktop-menu__title">«Технология климата»</a>
 						<ul class="desktop-menu__list">
-							<li>
+							<li class="item-services">
 								<a href="#" class="nav-item">Услуги</a>
 								<div class="submenu">
 									<ul class="submenu__list">
