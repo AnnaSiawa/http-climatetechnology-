@@ -1,6 +1,55 @@
 @import './modules/vars';
 @import './modules/functions';
+@import './modules/fonts';
+@import './modules/colors';
+@import './modules/breakpoints';
 
 .btn {
+  background-color: $color-blue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  text-align: center;
+  max-width: 230px;
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.5s ease;
+  @media all and (min-width: $breakpoint-tablet-M) {
+    max-width: 320px;
+  }
 
+  &:hover {
+    background-color: $color-dark;
+  }
+
+  button {
+    padding: 17.5px 0;
+    width: 100%;
+    cursor: pointer;
+    color: $color-white;
+    font-family: $font-Play;
+    font-size: 18px;
+    line-height: 21px;
+    @media all and (min-width: $breakpoint-tablet-M) {
+      padding: 27.5px 0;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+
+  }
+}
+
+h1 {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: $color-dark;
+  text-align: center;
+  @media all and (min-width: $breakpoint-tablet-M) {
+    font-size: 60px;
+    line-height: 69px;
+  }
 }

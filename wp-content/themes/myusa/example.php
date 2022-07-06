@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
 <div class="content ">
-	<div class="homepage container">
+	<div class="example container">
 
 		<div class="wrap">
 

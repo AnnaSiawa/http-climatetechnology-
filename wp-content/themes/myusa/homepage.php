@@ -7,16 +7,20 @@
 
 <?php get_header(); ?>
 
-<div class="content ">
-	<div class="homepage container">
+<div class="content">
 
-		<div class="wrap">
-
-			sdvsd v
-
+	<div class="main-screen">
+		<div class="main-screen__row container">
+			<div class="inner">
+				<h1>«Технология климата»</h1>
+				<div class="main-screen__disc">Продажа, монтаж и сервис климатического оборудования</div>
+				<div class="main-screen__btn btn">
+					<button>Выбрать кондиционер</button>
+				</div>
+			</div>
 		</div>
-
 	</div>
+
 </div>
 
 <?php get_footer(); ?>

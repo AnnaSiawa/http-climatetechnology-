@@ -18,12 +18,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html, body {
-  height: 100vh;
+  //height: 100vh; //для того, чтобы прижать футер к низу страницы
   line-height: 1;
   font-size: 14px;
   color: #fff;
-  //background-color: ;
   font-family: $primaryFont;
+}
+
+html.lock, body.lock {
+  overflow-y: hidden;
+  position: fixed;
+  height: 100vh;
 }
 
 body {
@@ -35,6 +40,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 html.lock, body.lock {
@@ -66,6 +72,13 @@ p {
   margin: 0;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: initial;
+}
+
 a {
   color: $color-white;
   text-decoration: none;
@@ -76,6 +89,7 @@ a {
     text-decoration: none;
   }
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -99,8 +113,9 @@ input[type=number] {
 
 .content {
   flex: 1 1 auto;
-  color: black;
+  color: $color-dark;
 }
+
 
 @import '../../node_modules/swiper/swiper';
 @import '../../node_modules/simplebar/src/simplebar';

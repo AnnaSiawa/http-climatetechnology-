@@ -138,7 +138,7 @@
   padding: 10px 15px;
 
   &__title {
-    margin: 0 auto 51px;
+    margin: 50px auto 51px;
     width: 100%;
     max-width: 375px;
     display: block;
@@ -166,10 +166,12 @@
   display: block;
   position: fixed;
   width: 100vw;
-  height: calc(100vh - #{var(--height-header-mobile)});
+  //height: calc(100vh - #{var(--height-header-mobile)});
+  height: 100vh;
   background-color: $color-dark;
   left: 0;
-  top: var(--height-header-mobile);
+  //top: var(--height-header-mobile);
+  top: 0;
 }
 
 .menu {

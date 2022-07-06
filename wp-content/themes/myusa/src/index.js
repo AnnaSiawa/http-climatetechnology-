@@ -7,6 +7,7 @@ window.onload = function () {
 
     const toggleMenu = () => {
         document.body.classList.toggle('lock');
+        document.getElementsByTagName('html')[0].classList.toggle('lock');
         bodyMenu.classList.toggle('active');
         iconMenu.classList.toggle('active');
         menuCell.classList.toggle('active');
