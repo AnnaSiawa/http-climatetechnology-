@@ -1,7 +1,10 @@
+@import './breakpoints';
+
 .product-swiper {
   &__img {
     position: relative;
     padding: 0 0 32.3%;
+    margin-bottom: 40px;
 
     img {
       position: absolute;
@@ -12,5 +15,71 @@
       object-fit: contain;
       object-position: top;
     }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        padding: 21px 0;
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &__disk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3px;
+    cursor: pointer;
+
+    &_title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      @media all and (min-width: $breakpoint-tablet-L) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+
+    &_arrow {
+      width: 25px;
+      transform: rotateY(180deg);
+      cursor: pointer;
+      @media all and (min-width: $breakpoint-tablet-L) {
+        display: none;
+      }
+    }
+  }
+
+  &__detail {
+    //display: none;
+    width: calc(100% - 30px);
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__detail._active {
+    display: block;
+    border: 1px solid red;
+  }
+
+  &__item {
+    margin-bottom: 2px;
+  }
+
+  &__btn {
+    margin: 25px auto;
   }
 }

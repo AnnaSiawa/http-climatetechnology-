@@ -8,31 +8,51 @@ const swiper = new Swiper('.product-swiper', {
         prevEl: '.swiper-prev'
     },
     watchOverflow: true,
-    loop: true,
+    // loop: true,
     slidesPerGroup: 1,
     slidesPerView: 1,
-    // breakpoints: {
-    //     1620: {
-    //         slidesPerView: 5,
-    //         spaceBetween: 60,
-    //     },
-    //     1380: {
-    //         slidesPerView: 4,
-    //         spaceBetween: 60,
-    //     },
-    //     991: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 60,
-    //     },
-    //     768: {
-    //         centeredSlides: false,
-    //         slidesPerView: 2,
-    //         spaceBetween: 60,
-    //     },
-    //     300: {
-    //         centeredSlides: true,
-    //         slidesPerView: 1,
-    //         spaceBetween: 60,
-    //     }
-    // }
 });
+
+const contentSwiper = document.querySelector('.product-swiper__content');
+const swiperDisk = document.querySelectorAll('.product-swiper__disk-wrap');
+// let swiperDisk = Array.prototype.slice.call(document.querySelectorAll('.product-swiper__disk'));
+const swiperDetail = document.querySelectorAll('.product-swiper__detail');
+
+console.log(swiperDisk);
+
+if (swiperDisk) {
+    swiperDisk.forEach(e => {
+        console.log(e);
+        e.addEventListener('click', event => {
+           if (event.target.className === 'product-swiper__detail') {
+               // swiperDetail.classList.add('_active');
+               console.log(event);
+               console.log('yhoo');
+           }
+       });
+    });
+
+
+
+
+}
+
+// if (swiperDisk) {
+//     swiperDisk.forEach(e => {
+//         console.log(e);
+//
+//         // let target = e.target;
+//         // let arr = [];
+//         // arr.push(e);
+//         //
+//         // console.log(arr);
+//
+//         e.addEventListener(('click'), i => {
+//             console.log(i);
+//             swiperDetail.forEach((item) => {
+//                 console.log(item);
+//                 item.classList.add('_active');
+//             });
+//         });
+//     });
+// }

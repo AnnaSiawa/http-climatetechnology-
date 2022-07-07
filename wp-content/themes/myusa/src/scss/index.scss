@@ -3,7 +3,7 @@
 //@import './modules/vars';
 @import './modules/breakpoints';
 @import './modules/colors';
-@import './modules/swiper';
+
 
 *, *:before, *::before, *:after, *::after {
   box-sizing: border-box;
@@ -133,6 +133,7 @@ input[type=number] {
 @import './header';
 @import './footer';
 @import './ui';
+@import './modules/swiper';
 
 @import './pages/example';
 @import './pages/page-homepage';
