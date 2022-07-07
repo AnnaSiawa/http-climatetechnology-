@@ -1,6 +1,7 @@
 @import "../modules/vars";
 @import "../modules/functions";
 @import "../modules/breakpoints";
+@import "../modules/colors";
 
 .main-screen {
   min-height: 627px;
@@ -9,15 +10,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  @media all and (min-width: $breakpoint-tablet-M) {
+  @media all and (min-width: $breakpoint-tablet-L) {
     min-height: 940px;
     background: url("../img/background-desktop-main-screen.png");
   }
 
+  &__row {
+    &_block {
+      flex: 0 1 50%;
+    }
+  }
+
+  .inner {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
   h1 {
     padding: 197px 0 10px;
-    @media all and (min-width: $breakpoint-tablet-M) {
+    text-align: center;
+    @media all and (min-width: $breakpoint-tablet-L) {
       padding: 326px 0 25px;
+      text-align: left;
     }
   }
 
@@ -27,11 +44,39 @@
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    @media all and (min-width: $breakpoint-tablet-M) {
+    @media all and (min-width: $breakpoint-tablet-L) {
       padding-bottom: 50px;
+      text-align: left;
       font-size: 36px;
       line-height: 42px;
     }
   }
 }
 
+.choose-screen {
+  &__row_block {
+    position: relative;
+
+    &:not(:last-child) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 1px;
+        background-color: $color-dark;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-dark;
+    }
+  }
+}
