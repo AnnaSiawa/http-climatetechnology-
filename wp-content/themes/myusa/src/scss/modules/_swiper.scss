@@ -1,6 +1,7 @@
 @import './breakpoints';
 
 .product-swiper {
+
   &__img {
     position: relative;
     padding: 0 0 32.3%;
@@ -52,27 +53,47 @@
 
     &_arrow {
       width: 25px;
-      transform: rotateY(180deg);
+      //transform: rotate(180deg);
+      transform: rotate(45deg);
       cursor: pointer;
+      transition: all 0.2s ease;
       @media all and (min-width: $breakpoint-tablet-L) {
         display: none;
       }
+      img {
+        width: 100%;
+      }
+    }
+
+    &_arrow.active {
+      //transform: rotate(90deg);
+      transform: rotate(360deg);
     }
   }
 
   &__detail {
-    //display: none;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
     width: calc(100% - 30px);
     margin-bottom: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    transition: all 0.2s ease;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
-  &__detail._active {
-    display: block;
-    border: 1px solid red;
+  &__detail.active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease;
   }
 
   &__item {
@@ -81,5 +102,28 @@
 
   &__btn {
     margin: 25px auto;
+  }
+}
+
+.product-slider-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+
+  .swiper-pagination {
+    margin: 0 12px;
+  }
+
+  .swiper-prev.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .swiper-next {
+    transform: rotate(180deg);
+  }
+
+  .swiper-next.swiper-button-disabled {
+    opacity: 0.3;
   }
 }

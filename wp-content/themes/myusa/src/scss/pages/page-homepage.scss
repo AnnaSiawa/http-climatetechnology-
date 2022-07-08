@@ -57,7 +57,7 @@
   &__row_block {
     position: relative;
 
-    &:not(:last-child) {
+    &:first-child {
       &::before {
         content: "";
         position: absolute;
