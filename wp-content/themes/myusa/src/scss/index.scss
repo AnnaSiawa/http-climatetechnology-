@@ -27,7 +27,7 @@ html, body {
 }
 
 html.lock, body.lock {
-  overflow-y: hidden;
+  //overflow-y: hidden;
   position: fixed;
   height: 100vh;
 }

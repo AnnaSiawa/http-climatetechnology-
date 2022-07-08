@@ -15,6 +15,7 @@ const swiper = new Swiper('.product-swiper', {
         clickable: true,
         type: 'fraction',
     },
+    watchSlidesProgress: true,
 });
 
 //описание товаров
