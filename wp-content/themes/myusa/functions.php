@@ -42,6 +42,9 @@ function getStatesForJS()
     return 'window.statesJson = ' . json_encode($res);
 }
 
+// Контроллер компонентов
+require_once __DIR__ . '/components/components-controller.php';
+
 
 //// Custom taxonomies
 //add_action('init', 'create_faq_group_hierarchical_taxonomy', 0);
@@ -90,9 +93,8 @@ function getStatesForJS()
 //    );
 //}
 
-//// Контроллер компонентов
-//require_once __DIR__ . '/components/components-controller.php';
-//
+
+
 //
 //add_filter('excerpt_length', function () {
 //    return 30;

@@ -1,4 +1,5 @@
 import Swiper, {Navigation, Pagination} from 'swiper';
+
 Swiper.use([Navigation, Pagination]);
 
 const swiper = new Swiper('.product-swiper', {
@@ -20,7 +21,6 @@ const swiper = new Swiper('.product-swiper', {
 
 //описание товаров
 const swiperDisks = document.querySelectorAll('.product-swiper__disk-wrap');
-
 if (swiperDisks) {
     swiperDisks.forEach(disk => {
         const detail = disk.children[1];

@@ -27,10 +27,16 @@
 	<div class="choose-screen homepage-screen">
 		<div class="choose-screen__row ">
 			<div class="inner">
-				<div class="choose-screen__row_block container">
-					<h2>Выбрать и купить<br> кондиционер в Брянске</h2>
+
+				<div class="title-block container">
+					<?= Component::render(
+						'title-block',
+						[
+							'title' => 'Выбрать и купить<br> кондиционер в Брянске',
+						]); ?>
 				</div>
-				<div class="choose-screen__row_block container">
+
+				<div class="title-block container">
 					<div class="product-slider">
 						<div class="product-swiper swiper">
 							<!-- Оболочка -->
@@ -239,6 +245,39 @@
 					<div class="swiper-next">
 						<img alt="swiper-next-img"
 							 src="<?php bloginfo('template_url'); ?>/dist/images/arrow.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="install-screen homepage-screen">
+		<div class="install-screen__row ">
+			<div class="inner">
+
+				<div class="title-block container">
+					<?= Component::render(
+						'title-block',
+						[
+							'title' => 'Установить кондиционер',
+						]); ?>
+				</div>
+
+				<div class="install-screen__wrap">
+					<div class="title-block container">
+						<?= Component::render(
+							'install',
+							[
+								'image' => '',
+								'title' => 'Замеры',
+								'disc' => 'Измерить помещение нужно для того, чтобы специалист определил, какой мощности кондиционер нужен в данное помещение.',
+							]); ?>
+					</div>
+					<div class="title-block container">
+
+					</div>
+					<div class="title-block container">
+
 					</div>
 				</div>
 			</div>

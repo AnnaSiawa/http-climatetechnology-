@@ -125,6 +125,33 @@ input[type=number] {
   }
 }
 
+.title-block {
+  position: relative;
+
+  &:first-child {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-dark;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-dark;
+  }
+}
+
+@import '../../components/all';
 
 @import '../../node_modules/swiper/swiper';
 @import '../../node_modules/simplebar/src/simplebar';

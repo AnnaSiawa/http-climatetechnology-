@@ -53,30 +53,16 @@
   }
 }
 
-.choose-screen {
-  &__row_block {
-    position: relative;
 
-    &:first-child {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 1px;
-        background-color: $color-dark;
+.install-screen {
+  &__wrap {
+    .title-block {
+      &:first-child {
+        &::before {
+          content: "";
+          display: none;
+        }
       }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: $color-dark;
     }
   }
 }
