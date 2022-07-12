@@ -268,16 +268,28 @@
 						<?= Component::render(
 							'install',
 							[
-								'image' => '',
+								'image' => '/dist/images/install-img1.png',
 								'title' => 'Замеры',
 								'disc' => 'Измерить помещение нужно для того, чтобы специалист определил, какой мощности кондиционер нужен в данное помещение.',
 							]); ?>
 					</div>
 					<div class="title-block container">
-
+						<?= Component::render(
+							'install',
+							[
+								'image' => '/dist/images/install-img2.png',
+								'title' => 'Монтаж',
+								'disc' => 'Благодаря монтажным работам кондиционеры и&nbsp;сплит-системы будут исправно функционировать в&nbsp;течение всего эксплуатационного срока',
+							]); ?>
 					</div>
 					<div class="title-block container">
-
+						<?= Component::render(
+							'install',
+							[
+								'image' => '/dist/images/install-img3.png',
+								'title' => 'Обслуживание',
+								'disc' => 'Комплекс работ для стабильной и&nbsp;правильной работы кондиционера, направленный на&nbsp;устранение неисправностей и&nbsp;прочего',
+							]); ?>
 					</div>
 				</div>
 			</div>
