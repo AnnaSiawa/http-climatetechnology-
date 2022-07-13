@@ -30,11 +30,6 @@
 
 				<div class="title-block">
 					<h2 class="container">Выбрать и купить<br> кондиционер в Брянске</h2>
-<!--					--><?//= Component::render(
-//						'title-block',
-//						[
-//							'title' => 'Выбрать и купить<br> кондиционер в Брянске',
-//						]); ?>
 				</div>
 
 				<div class="title-block">
@@ -258,11 +253,6 @@
 
 				<div class="title-block">
 					<h2 class="container">Установить кондиционер</h2>
-<!--					--><?//= Component::render(
-//						'title-block',
-//						[
-//							'title' => 'Установить кондиционер',
-//						]); ?>
 				</div>
 
 				<div class="install-screen-wrap">
@@ -297,6 +287,52 @@
 						</div>
 					</div>
 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="measure-screen homepage-screen">
+		<div class="measure-screen__row">
+			<div class="inner">
+
+				<div class="title-block">
+					<h2 class="container">записаться на замер
+					</h2>
+				</div>
+
+				<div class="title-block">
+					<div class="measure-screen-img">
+						<img src="<?php bloginfo('template_url'); ?>/dist/images/measure-img.png" alt="">
+					</div>
+					<div class="measure-screen-form container">
+						<form>
+							<div class="form-title">Необходимо заполнить данные:</div>
+							<div class="input">
+								<div class="input-name">Имя</div>
+								<label for="name-id"></label>
+								<input type="text" name="name" id="name-id" placeholder="Ваше имя">
+							</div>
+							<div class="input">
+								<div class="input-name">Фамилия</div>
+								<label for="surname-id"></label>
+								<input type="text" name="name" id="surname-id" placeholder="Ваша фамилия">
+							</div>
+							<div class="input">
+								<div class="input-name">Номер телефона</div>
+								<label for="phone-id"></label>
+								<input type="text" name="name" id="phone-id" placeholder="Ваш номер телефона">
+							</div>
+							<div class="input">
+								<div class="input-name">Адрес</div>
+								<label for="address-id"></label>
+								<input type="text" name="name" id="address-id" placeholder="Ваш адрес">
+							</div>
+						</form>
+						<div class="main-screen__btn btn">
+							<button>Отправить</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

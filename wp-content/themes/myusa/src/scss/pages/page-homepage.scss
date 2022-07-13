@@ -81,7 +81,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     @media all and (min-width: $breakpoint-tablet-L) {
-      flex: 0 1 33.33%;
+      //flex: 0 1 33.33%;
     }
 
     &::after {
@@ -211,5 +211,64 @@
     padding: 0;
     width: auto;
     max-width: none;
+  }
+}
+
+.measure-screen {
+  .measure-screen-img {
+    position: relative;
+    padding: 0 0 50%;
+    margin-bottom: 15px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+      object-position: top;
+      transition: 1s;
+    }
+  }
+
+  .measure-screen-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $color-dark;
+    border-radius: 5px;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      height: 50px;
+    }
+  }
+
+  .input-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    @media all and (min-width: $breakpoint-tablet-L) {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }
