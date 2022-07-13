@@ -28,16 +28,17 @@
 		<div class="choose-screen__row ">
 			<div class="inner">
 
-				<div class="title-block container">
-					<?= Component::render(
-						'title-block',
-						[
-							'title' => 'Выбрать и купить<br> кондиционер в Брянске',
-						]); ?>
+				<div class="title-block">
+					<h2 class="container">Выбрать и купить<br> кондиционер в Брянске</h2>
+<!--					--><?//= Component::render(
+//						'title-block',
+//						[
+//							'title' => 'Выбрать и купить<br> кондиционер в Брянске',
+//						]); ?>
 				</div>
 
-				<div class="title-block container">
-					<div class="product-slider">
+				<div class="title-block">
+					<div class="product-slider container">
 						<div class="product-swiper swiper">
 							<!-- Оболочка -->
 							<div class="product-swiper__wrapper swiper-wrapper">
@@ -255,42 +256,47 @@
 		<div class="install-screen__row ">
 			<div class="inner">
 
-				<div class="title-block container">
-					<?= Component::render(
-						'title-block',
-						[
-							'title' => 'Установить кондиционер',
-						]); ?>
+				<div class="title-block">
+					<h2 class="container">Установить кондиционер</h2>
+<!--					--><?//= Component::render(
+//						'title-block',
+//						[
+//							'title' => 'Установить кондиционер',
+//						]); ?>
 				</div>
 
-				<div class="install-screen__wrap">
-					<div class="title-block container">
-						<?= Component::render(
-							'install',
-							[
-								'image' => '/dist/images/install-img1.png',
-								'title' => 'Замеры',
-								'disc' => 'Измерить помещение нужно для того, чтобы специалист определил, какой мощности кондиционер нужен в данное помещение.',
-							]); ?>
+				<div class="install-screen-wrap">
+
+					<div class="install-screen-inner container">
+						<div class="title-block">
+							<?= Component::render(
+								'install',
+								[
+									'image' => '/dist/images/install-img1.png',
+									'title' => 'Замеры',
+									'disc' => 'Измерить помещение нужно для того, чтобы специалист определил, какой мощности кондиционер нужен в данное помещение.',
+								]); ?>
+						</div>
+						<div class="title-block">
+							<?= Component::render(
+								'install',
+								[
+									'image' => '/dist/images/install-img2.png',
+									'title' => 'Монтаж',
+									'disc' => 'Благодаря монтажным работам кондиционеры и&nbsp;сплит-системы будут исправно функционировать в&nbsp;течение всего эксплуатационного срока',
+								]); ?>
+						</div>
+						<div class="title-block">
+							<?= Component::render(
+								'install',
+								[
+									'image' => '/dist/images/install-img3.png',
+									'title' => 'Обслуживание',
+									'disc' => 'Комплекс работ для стабильной и&nbsp;правильной работы кондиционера, направленный на&nbsp;устранение неисправностей и&nbsp;прочего',
+								]); ?>
+						</div>
 					</div>
-					<div class="title-block container">
-						<?= Component::render(
-							'install',
-							[
-								'image' => '/dist/images/install-img2.png',
-								'title' => 'Монтаж',
-								'disc' => 'Благодаря монтажным работам кондиционеры и&nbsp;сплит-системы будут исправно функционировать в&nbsp;течение всего эксплуатационного срока',
-							]); ?>
-					</div>
-					<div class="title-block container">
-						<?= Component::render(
-							'install',
-							[
-								'image' => '/dist/images/install-img3.png',
-								'title' => 'Обслуживание',
-								'disc' => 'Комплекс работ для стабильной и&nbsp;правильной работы кондиционера, направленный на&nbsp;устранение неисправностей и&nbsp;прочего',
-							]); ?>
-					</div>
+
 				</div>
 			</div>
 		</div>

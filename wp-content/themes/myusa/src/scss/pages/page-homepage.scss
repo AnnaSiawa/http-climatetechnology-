@@ -6,13 +6,14 @@
 .main-screen {
   min-height: 627px;
   height: 100%;
-  background: url("../img/background-main-screen.png");
+  background-image: url("../img/background-main-screen.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
   @media all and (min-width: $breakpoint-tablet-L) {
     min-height: 940px;
-    background: url("../img/background-desktop-main-screen.png");
+    background-image: url("../img/background-desktop-main-screen.png");
+    background-attachment: fixed;
   }
 
   &__row {
@@ -53,16 +54,162 @@
   }
 }
 
+.install-screen-wrap {
+  position: relative;
 
-.install-screen {
-  &__wrap {
-    .title-block {
-      &:first-child {
-        &::before {
-          content: "";
-          display: none;
-        }
+  .install-screen-inner {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &::after {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-dark;
+    }
+  }
+
+  .title-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      flex: 0 1 33.33%;
+    }
+
+    &::after {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        display: none;
       }
     }
+
+    &:first-child {
+      &::before {
+        content: "";
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        border-right: 1px solid $color-dark;
+        border-left: 1px solid $color-dark;
+      }
+    }
+
+    &:not(:last-child) {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        padding-right: 70px;
+      }
+    }
+
+    &:not(:first-child) {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        padding-left: 70px;
+      }
+    }
+  }
+
+  .install-image {
+    position: relative;
+    padding: 0 0 50%;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    @media all and (min-width: $breakpoint-tablet-L) {
+      padding: 0;
+      height: 250px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto 24px;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+      object-position: top;
+      transition: 1s;
+
+      @media all and (min-width: $breakpoint-tablet-L) {
+        object-fit: cover;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+  .install-disc {
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      //height: 116px;
+      margin-bottom: 76px;
+      font-size: 24px;
+      line-height: 28px;
+
+      min-height: 116px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .install-link {
+    max-width: 335px;
+    width: 100%;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      max-width: initial;
+    }
+  }
+}
+
+.install-wrap.container {
+  @media all and (min-width: $breakpoint-tablet-L) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+}
+
+.install-screen-inner.container {
+  @media all and (max-width: $breakpoint-tablet-L - 1px) {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    max-width: none;
   }
 }
