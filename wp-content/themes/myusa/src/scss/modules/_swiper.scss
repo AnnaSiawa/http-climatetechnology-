@@ -217,9 +217,12 @@
     overflow: hidden;
     border-radius: 5px;
     @media all and (min-width: $breakpoint-tablet-L) {
-      padding-bottom: 600px;
+      padding-bottom: 500px;
       max-width: 800px;
       margin: 0 auto;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
+      padding-bottom: 600px;
     }
 
     img {
