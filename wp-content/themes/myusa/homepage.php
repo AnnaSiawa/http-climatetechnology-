@@ -9,6 +9,8 @@
 
 <div class="content">
 
+	<?= Component::render('arrow'); ?>
+
 	<div class="main-screen homepage-screen">
 		<div class="main-screen__row container">
 			<div class="inner">
@@ -297,8 +299,7 @@
 			<div class="inner">
 
 				<div class="title-block">
-					<h2 class="container">записаться на замер
-					</h2>
+					<h2 class="container">записаться на замер</h2>
 				</div>
 
 				<div class="title-block">
@@ -329,11 +330,73 @@
 								<input type="text" name="name" id="address-id" placeholder="Ваш адрес">
 							</div>
 						</form>
-						<div class="main-screen__btn btn">
+						<div class="measure-screen__btn btn">
 							<button>Отправить</button>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="examples-screen homepage-screen">
+		<div class="examples-screen__row">
+			<div class="inner">
+
+				<div class="title-block">
+					<h2 class="container">Наши фото</h2>
+				</div>
+
+				<div class="title-block">
+					<div class="examples-slider container">
+						<div class="examples-swiper swiper">
+							<!-- Оболочка -->
+							<div class="examples-swiper__wrapper swiper-wrapper">
+								<!--Слайды -->
+								<div class="examples__slide swiper-slide">
+									<!-- внутренний контент слайда -->
+									<div class="examples-swiper__item item">
+										<div class="examples-swiper__img">
+											<img alt="examples-swiper-img"
+												 src="<?php bloginfo('template_url'); ?>/dist/images/example1.png">
+										</div>
+									</div>
+								</div>
+								<div class="examples__slide swiper-slide">
+									<!-- внутренний контент слайда -->
+									<div class="examples-swiper__item item">
+										<div class="examples-swiper__img">
+											<img alt="examples-swiper-img"
+												 src="<?php bloginfo('template_url'); ?>/dist/images/example2.png">
+										</div>
+									</div>
+								</div>
+								<div class="examples__slide swiper-slide">
+									<!-- внутренний контент слайда -->
+									<div class="examples-swiper__item item">
+										<div class="examples-swiper__img">
+											<img alt="examples-swiper-img"
+												 src="<?php bloginfo('template_url'); ?>/dist/images/example2.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="examples-slider-nav container">
+					<div class="examples-swiper-prev">
+						<img alt="swiper-prev-img"
+							 src="<?php bloginfo('template_url'); ?>/dist/images/arrow.png">
+					</div>
+					<div class="examples-swiper-pagination"></div>
+					<div class="examples-swiper-next">
+						<img alt="swiper-next-img"
+							 src="<?php bloginfo('template_url'); ?>/dist/images/arrow.png">
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

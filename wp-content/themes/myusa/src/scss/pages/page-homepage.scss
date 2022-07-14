@@ -215,10 +215,57 @@
 }
 
 .measure-screen {
+
+  .inner {
+    position: relative;
+
+    &::after {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        background-color: #272a41;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100vw;
+      }
+    }
+  }
+
+  .title-block {
+    &:nth-child(2) {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0;
+      }
+    }
+  }
+
   .measure-screen-img {
     position: relative;
     padding: 0 0 50%;
     margin-bottom: 15px;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      flex: 0 1 50%;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    &::before {
+      @media all and (min-width: $breakpoint-tablet-L) {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: -0.1%;
+        bottom: 0;
+        width: 1px;
+        background-color: $color-dark;
+      }
+    }
 
     img {
       position: absolute;
@@ -229,6 +276,18 @@
       object-fit: contain;
       object-position: top;
       transition: 1s;
+      @media all and (min-width: $breakpoint-tablet-L) {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .measure-screen-form.container {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      margin: 0 auto;
+      padding: 50px 20px 45px 0;
+      width: auto;
+      max-width: 600px;
     }
   }
 
@@ -237,9 +296,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      flex: 0 1 50%;
+      align-items: flex-start;
+    }
+  }
+
+  form {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      width: 100%;
+      max-width: 600px;
+    }
   }
 
   .form-title {
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -255,12 +326,40 @@
     height: 40px;
     border: 1px solid $color-dark;
     border-radius: 5px;
+
     @media all and (min-width: $breakpoint-tablet-L) {
       height: 50px;
     }
   }
 
+  input::-webkit-input-placeholder {
+    padding: 9px 0 9px 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-dark;
+    opacity: 0.3;
+  }
+
+  input:-moz-placeholder {
+    padding: 9px 0 9px 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-dark;
+    opacity: 0.3;
+  }
+
+  .input {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
   .input-name {
+    margin-bottom: 5px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -270,5 +369,9 @@
       font-size: 24px;
       line-height: 28px;
     }
+  }
+
+  .measure-screen__btn {
+    margin: 25px 0 20px;
   }
 }

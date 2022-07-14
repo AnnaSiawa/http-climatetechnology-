@@ -1,20 +1,47 @@
-<footer class="footer" style="background-color: #bf9878">
-	<div class="footer__container">
-		<div class="footer__emblems">
-			<div>
-				sdbvsdv
+<footer class="footer">
+	<div class="footer__row container">
+		<div class="footer__inner">
+			<div class="footer__block">
+				<a href="#">
+					<div class="footer__title">«Технология климата»</div>
+				</a>
+				<div class="footer__disc">Качественно установим кондиционер в вашем доме!</div>
 			</div>
-			<div class="checkout-payment">
-				<div class="checkout-payment__buttons">
-					<a class="checkout-payment__btn pb-card"></a>
-					<a class="checkout-payment__btn pb-ci">ergergeg</a>
-					<a class="checkout-payment__btn pb-jcb">rgergerg</a>
-					<a class="checkout-payment__btn pb-paypal">rgergerg</a>
-					<a class="checkout-payment__btn pb-wu">rgergerg</a>
-					<a class="checkout-payment__btn pb-wt"></a>
+			<div class="footer__block">
+				<div class="footer__subtitle">Меню</div>
+				<div class="footer__item-wrap">
+					<a href="#">
+						<div class="footer__item">Главная</div>
+					</a>
+					<a href="#">
+						<div class="footer__item">Каталог</div>
+					</a>
+					<a href="#">
+						<div class="footer__item">Замеры</div>
+					</a>
+					<a href="#">
+						<div class="footer__item">Монтаж</div>
+					</a>
+					<a href="#">
+						<div class="footer__item">Обслуживание</div>
+					</a>
+					<a href="#">
+						<div class="footer__item">Наши фото</div>
+					</a>
 				</div>
-			</div>
 
+			</div>
+			<div class="footer__block">
+				<div class="footer__subtitle">Контакты</div>
+				<div class="footer__item">Адрес: Россия, г.Брянск, ул.Название</div>
+				<a class="footer__item" href="tel:+74832300126">
+					<div>Телефон: 30-01-26</div>
+				</a>
+				<a class="footer__item" href="mailto:nazvanie@mail.ru">
+					<div>E-mail: nazvanie@mail.ru</div>
+				</a>
+				<div class="footer__item">График работы: пн-вс с 9:00 до 18:00</div>
+			</div>
 		</div>
 	</div>
 </footer>

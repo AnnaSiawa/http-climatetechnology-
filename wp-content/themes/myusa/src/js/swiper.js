@@ -42,3 +42,27 @@ if (swiperDisks) {
         });
     });
 }
+
+
+const swiperExamples = new Swiper('.examples-swiper', {
+    navigation: {
+        nextEl: '.examples-swiper-next',
+        prevEl: '.examples-swiper-prev'
+    },
+    watchOverflow: true,
+    // loop: true,
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    pagination: {
+        el: '.examples-swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+    },
+    watchSlidesProgress: true,
+    breakpoints: {
+        1100: {
+            slidesPerView: 2,
+            spaceBetween: 80,
+        }
+    }
+});
