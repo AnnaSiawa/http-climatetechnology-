@@ -34,6 +34,10 @@
     padding: 197px 0 10px;
     text-align: center;
     @media all and (min-width: $breakpoint-tablet-L) {
+      padding: 188px 0 25px;
+      text-align: left;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
       padding: 326px 0 25px;
       text-align: left;
     }
@@ -106,12 +110,18 @@
 
     &:not(:last-child) {
       @media all and (min-width: $breakpoint-tablet-L) {
+        padding-right: 40px;
+      }
+      @media all and (min-width: $breakpoint-desktop-M) {
         padding-right: 70px;
       }
     }
 
     &:not(:first-child) {
       @media all and (min-width: $breakpoint-tablet-L) {
+        padding-left: 40px;
+      }
+      @media all and (min-width: $breakpoint-desktop-M) {
         padding-left: 70px;
       }
     }
@@ -173,17 +183,20 @@
     line-height: 21px;
     text-align: center;
     @media all and (min-width: $breakpoint-tablet-L) {
-      //height: 116px;
       margin-bottom: 76px;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 23px;
 
       min-height: 116px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
+      //overflow: hidden;
+      //text-overflow: ellipsis;
+      //display: -webkit-box;
+      //-webkit-line-clamp: 5;
+      //-webkit-box-orient: vertical;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
+      font-size: 24px;
+      line-height: 28px;
     }
   }
 
@@ -285,9 +298,12 @@
   .measure-screen-form.container {
     @media all and (min-width: $breakpoint-tablet-L) {
       margin: 0 auto;
-      padding: 50px 20px 45px 0;
+      padding: 50px 20px 45px 65px;
       width: auto;
       max-width: 600px;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
+      padding: 50px 20px 45px 0;
     }
   }
 
@@ -316,6 +332,10 @@
     font-size: 20px;
     line-height: 23px;
     @media all and (min-width: $breakpoint-tablet-L) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
       font-size: 24px;
       line-height: 28px;
     }

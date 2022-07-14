@@ -121,6 +121,9 @@ input[type=number] {
 .homepage-screen {
   margin-bottom: 60px;
   @media all and (min-width: $breakpoint-tablet-L) {
+    margin-bottom: 100px;
+  }
+  @media all and (min-width: $breakpoint-desktop-M) {
     margin-bottom: 200px;
   }
 }

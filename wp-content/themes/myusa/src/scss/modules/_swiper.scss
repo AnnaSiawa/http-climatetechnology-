@@ -38,6 +38,10 @@
   &__content {
     @media all and (min-width: $breakpoint-tablet-L) {
       flex: 0 1 50%;
+      padding: 0 0 0 60px;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
+      flex: 0 1 50%;
       padding: 0 0 0 100px;
     }
 
@@ -61,6 +65,11 @@
     font-size: 20px;
     line-height: 23px;
     @media all and (min-width: $breakpoint-tablet-L) {
+      margin: 25px 0 19px 0;
+      font-size: 34px;
+      line-height: 38px;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
       margin: 45px 0 19px 0;
       font-size: 36px;
       line-height: 42px;
@@ -125,6 +134,10 @@
       opacity: 1;
       visibility: visible;
       margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
       font-size: 24px;
       line-height: 28px;
     }
@@ -140,6 +153,9 @@
   &__btn {
     margin: 25px auto;
     @media all and (min-width: $breakpoint-tablet-L) {
+      margin: 20px 0;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
       margin: 35px 0 45px;
     }
   }
