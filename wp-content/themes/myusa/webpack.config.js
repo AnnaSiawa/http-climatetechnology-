@@ -80,9 +80,9 @@ module.exports = {
                         maxSize: 64,
                     },
                 },
-                generator: {
-                    filename: 'fonts/[name][ext]',
-                },
+                // generator: {
+                //     filename: 'fonts/[name][ext]',
+                // },
             },
         ]
     },
@@ -96,7 +96,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {from: 'src/img', to: 'images', force: true},
-                {from: 'src/fonts', to: 'fonts', force: true}
+                // {from: 'src/fonts', to: 'fonts', force: true}
             ],
         }),
         new BrowserSyncPlugin({

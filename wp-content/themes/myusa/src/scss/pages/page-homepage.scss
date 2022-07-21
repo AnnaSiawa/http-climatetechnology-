@@ -357,6 +357,14 @@
     @media all and (min-width: $breakpoint-tablet-L) {
       height: 50px;
     }
+
+    &:focus {
+      box-shadow: 0 0 15px $color-dark;
+    }
+  }
+
+  input._error {
+    box-shadow: 0 0 15px red;
   }
 
   input::-webkit-input-placeholder {
@@ -399,6 +407,9 @@
   }
 
   .measure-screen__btn {
-    margin: 25px 0 20px;
+    margin: 25px auto 20px;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      margin: 25px 0 20px;
+    }
   }
 }

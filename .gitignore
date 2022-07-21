@@ -9,6 +9,8 @@
 wp-activate.php
 !wp-content/
 !.env.example
+!mail.php
+!phpmailer
 wp-content/uploads/*
 wp-content/cache/
 wp-content/plugins

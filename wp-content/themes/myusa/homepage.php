@@ -307,32 +307,53 @@
 						<img src="<?php bloginfo('template_url'); ?>/dist/images/measure-img.png" alt="">
 					</div>
 					<div class="measure-screen-form container">
-						<form>
+						<form action="mail.php" method="POST" id="form-mail">
+
 							<div class="form-title">Необходимо заполнить данные:</div>
 							<div class="input">
 								<div class="input-name">Имя</div>
-								<label for="name-id"></label>
-								<input type="text" name="name" id="name-id" placeholder="Ваше имя">
+								<label for="name"></label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									placeholder="Ваше имя"
+									class="_req"/>
 							</div>
 							<div class="input">
 								<div class="input-name">Фамилия</div>
-								<label for="surname-id"></label>
-								<input type="text" name="name" id="surname-id" placeholder="Ваша фамилия">
+								<label for="surname"></label>
+								<input
+									type="text"
+									name="ser_name"
+									id="surname"
+									placeholder="Ваша фамилия"/>
 							</div>
 							<div class="input">
 								<div class="input-name">Номер телефона</div>
-								<label for="phone-id"></label>
-								<input type="text" name="name" id="phone-id" placeholder="Ваш номер телефона">
+								<label for="phone"></label>
+								<input
+									type="text"
+									name="phone"
+									id="phone"
+									placeholder="Ваш номер телефона"
+									class="_req"/>
 							</div>
 							<div class="input">
 								<div class="input-name">Адрес</div>
-								<label for="address-id"></label>
-								<input type="text" name="name" id="address-id" placeholder="Ваш адрес">
+								<label for="address"></label>
+								<input type="text" name="address" id="address" placeholder="Ваш адрес"/>
+							</div>
+							<div class="measure-screen__btn btn">
+								<button
+									class="button"
+									type="submit"
+									id="button">
+									Отправить
+								</button>
 							</div>
 						</form>
-						<div class="measure-screen__btn btn">
-							<button>Отправить</button>
-						</div>
+
 					</div>
 				</div>
 			</div>

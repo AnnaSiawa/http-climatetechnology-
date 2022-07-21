@@ -29,7 +29,6 @@
 						<div class="footer__item">Наши фото</div>
 					</a>
 				</div>
-
 			</div>
 			<div class="footer__block">
 				<div class="footer__subtitle">Контакты</div>
@@ -50,8 +49,8 @@
 <?php wp_footer(); ?>
 
 
-<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
-<!--<script src="/wp-content/themes/myusa/dist/index.js"></script>-->
+<!--<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>-->
+<!--<script src="/wp-content/themes/t-climate/dist/index.js"></script>-->
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </body>
 
