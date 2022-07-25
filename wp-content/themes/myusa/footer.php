@@ -2,7 +2,7 @@
 	<div class="footer__row container">
 		<div class="footer__inner">
 			<div class="footer__block">
-				<a href="#">
+				<a href="/">
 					<div class="footer__title">«Технология климата»</div>
 				</a>
 				<div class="footer__disc">Качественно установим кондиционер в вашем доме!</div>
@@ -10,19 +10,19 @@
 			<div class="footer__block">
 				<div class="footer__subtitle">Меню</div>
 				<div class="footer__item-wrap">
-					<a href="#">
+					<a href="/">
 						<div class="footer__item">Главная</div>
 					</a>
 					<a href="#">
 						<div class="footer__item">Каталог</div>
 					</a>
-					<a href="#">
+					<a href="/measure">
 						<div class="footer__item">Замеры</div>
 					</a>
-					<a href="#">
+					<a href="/mounting">
 						<div class="footer__item">Монтаж</div>
 					</a>
-					<a href="#">
+					<a href="/service">
 						<div class="footer__item">Обслуживание</div>
 					</a>
 					<a href="#">

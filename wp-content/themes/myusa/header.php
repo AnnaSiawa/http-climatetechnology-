@@ -51,9 +51,9 @@
 					<a href="/" class="mobile-menu__title">«Технология климата»</a>
 					<ul class="mobile-menu__list">
 						<li><a href="#" class="nav-item">Каталог</a></li>
-						<li><a href="#" class="nav-item">Замеры</a></li>
-						<li><a href="#" class="nav-item">Монтаж</a></li>
-						<li><a href="#" class="nav-item">Обслуживание</a></li>
+						<li><a href="/measure" class="nav-item">Замеры</a></li>
+						<li><a href="/mounting" class="nav-item">Монтаж</a></li>
+						<li><a href="/service" class="nav-item">Обслуживание</a></li>
 						<li><a href="#" class="nav-item">Наши фото</a></li>
 						<li><a href="#" class="nav-item">Контакты</a></li>
 					</ul>
@@ -66,9 +66,9 @@
 							<a href="#" class="nav-item">Услуги</a>
 							<div class="submenu">
 								<ul class="submenu__list">
-									<li><a href="#">Замеры</a></li>
-									<li><a href="#">Монтаж</a></li>
-									<li><a href="#">Обслуживание</a></li>
+									<li><a href="/measure">Замеры</a></li>
+									<li><a href="/mounting">Монтаж</a></li>
+									<li><a href="/service">Обслуживание</a></li>
 								</ul>
 							</div>
 						</li>

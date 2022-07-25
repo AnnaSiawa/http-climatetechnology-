@@ -4,6 +4,10 @@
 @import './modules/breakpoints';
 @import './modules/colors';
 
+:root {
+  --height-header-mobile: 37px;
+  --height-header-desktop: 79px;
+}
 
 *, *:before, *::before, *:after, *::after {
   box-sizing: border-box;
@@ -116,6 +120,10 @@ input[type=number] {
   color: $color-dark;
   position: relative;
   z-index: 1;
+  margin-top: var(--height-header-mobile);
+  @media all and (min-width: $breakpoint-tablet-L) {
+    margin-top: var(--height-header-desktop);
+  }
 }
 
 .homepage-screen {
@@ -170,3 +178,4 @@ input[type=number] {
 
 @import './pages/example';
 @import './pages/page-homepage';
+@import './pages/services';

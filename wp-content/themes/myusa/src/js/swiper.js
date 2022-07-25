@@ -66,3 +66,20 @@ const swiperExamples = new Swiper('.examples-swiper', {
         }
     }
 });
+
+const swiperServices = new Swiper('.services-swiper', {
+    navigation: {
+        nextEl: '.services-swiper-next',
+        prevEl: '.services-swiper-prev'
+    },
+    watchOverflow: true,
+    // loop: true,
+    slidesPerGroup: 1,
+    slidesPerView: 1,
+    pagination: {
+        el: '.services-swiper-pagination',
+        clickable: true,
+        type: 'fraction',
+    },
+    watchSlidesProgress: true,
+});

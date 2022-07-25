@@ -2,6 +2,7 @@
 $image = "";
 $title = "";
 $disc = "";
+$link = "";
 
 extract($params);
 ?>
@@ -13,7 +14,7 @@ extract($params);
 	<h3><?= $title ?></h3>
 	<div class="install-disc"><?= $disc ?></div>
 	<div class="install-link">
-		<a href="#">
+		<a href="/measure">
 			<span>Узнать подробнее</span>
 			<span>
 			<img class="install-arrow-hover" alt=""

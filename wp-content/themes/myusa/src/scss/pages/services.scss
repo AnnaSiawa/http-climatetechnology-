@@ -1,0 +1,51 @@
+@import "../modules/breakpoints";
+
+.services-content {
+  //display: flex;
+  //flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media all and (min-width: $breakpoint-tablet-L) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.services-disc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  @media all and (min-width: $breakpoint-tablet-L) {
+    flex: 0 1 45.8%;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  p {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.services-swiper {
+  @media all and (min-width: $breakpoint-tablet-L) {
+    flex: 0 1 45.8%;
+    margin-left: 0;
+  }
+}
+
+.services-screen.mounting {
+  .services-content {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      flex-direction: row-reverse;
+    }
+  }
+  .services-swiper {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      margin-right: 0;
+    }
+  }
+}

@@ -210,7 +210,17 @@
   @media all and (min-width: $breakpoint-tablet-L) {
     padding: 50px 0;
   }
+}
 
+.services-swiper {
+  .swiper-wrapper {
+    @media all and (min-width: $breakpoint-tablet-L) {
+      height: initial;
+    }
+  }
+}
+
+.examples-swiper, .services-swiper {
   &__img {
     position: relative;
     padding: 0 0 50%;
@@ -220,9 +230,6 @@
       padding-bottom: 500px;
       max-width: 800px;
       margin: 0 auto;
-    }
-    @media all and (min-width: $breakpoint-desktop-M) {
-      padding-bottom: 600px;
     }
 
     img {
@@ -242,17 +249,46 @@
   }
 }
 
+.examples-swiper {
+  &__img {
+    @media all and (min-width: $breakpoint-desktop-M) {
+      padding-bottom: 600px;
+    }
+  }
+}
+
+.services-swiper {
+  &__img {
+    @media all and (min-width: $breakpoint-desktop-M) {
+      padding-bottom: 650px;
+    }
+  }
+}
+
 .examples-slider-nav {
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
   margin-top: 10px;
   @media all and (min-width: $breakpoint-tablet-L) {
     margin-top: 20px;
   }
+}
+
+.services-slider-nav {
+  justify-content: center;
+  margin: 15px 0;
+  @media all and (min-width: $breakpoint-tablet-L) {
+    margin: 25px 0 0 0;
+  }
+}
+
+.examples-slider-nav, .services-slider-nav {
+  display: flex;
+  align-items: center;
 
   .examples-swiper-prev,
-  .examples-swiper-next {
+  .examples-swiper-next,
+  .services-swiper-prev,
+  .services-swiper-next {
     cursor: pointer;
     @media all and (min-width: $breakpoint-tablet-L) {
       width: 50px;
@@ -263,19 +299,23 @@
     }
   }
 
-  .examples-swiper-prev.swiper-button-disabled {
+  .examples-swiper-prev.swiper-button-disabled,
+  .services-swiper-prev.swiper-button-disabled {
     opacity: 0.3;
   }
 
-  .examples-swiper-next {
+  .examples-swiper-next,
+  .services-swiper-next {
     transform: rotate(180deg);
   }
 
-  .examples-swiper-next.swiper-button-disabled {
+  .examples-swiper-next.swiper-button-disabled,
+  .services-swiper-next.swiper-button-disabled {
     opacity: 0.3;
   }
 
-  .examples-swiper-pagination {
+  .examples-swiper-pagination,
+  .services-swiper-pagination {
     margin: 0 12px;
     font-size: 16px;
     line-height: 19px;
