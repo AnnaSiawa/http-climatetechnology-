@@ -13,9 +13,6 @@
 					<a href="/">
 						<div class="footer__item">Главная</div>
 					</a>
-					<a href="#">
-						<div class="footer__item">Каталог</div>
-					</a>
 					<a href="/measure">
 						<div class="footer__item">Замеры</div>
 					</a>
@@ -24,6 +21,9 @@
 					</a>
 					<a href="/service">
 						<div class="footer__item">Обслуживание</div>
+					</a>
+					<a href="#">
+						<div class="footer__item">Каталог</div>
 					</a>
 					<a href="#">
 						<div class="footer__item">Наши фото</div>

@@ -28,6 +28,7 @@ html, body {
   font-size: 14px;
   color: #fff;
   font-family: $primaryFont;
+  scroll-behavior: smooth;
 }
 
 html.lock, body.lock {
@@ -63,7 +64,7 @@ html.lock, body.lock {
   overflow-x: hidden;
 }
 
-ul {
+ul, ol {
   list-style-type: none;
   padding: 0;
   margin: 0;

@@ -7,6 +7,7 @@
 :root {
   --height-header-mobile: 37px;
   --height-header-desktop: 79px;
+  --height-header-desktop-scroll: 55px;
 }
 
 .header {
@@ -16,12 +17,14 @@
   background-color: $color-dark;
   width: 100%;
   min-height: var(--height-header-mobile);
+  transition: 0.3s;
   @media all and (min-width: $breakpoint-tablet-L) {
     min-height: var(--height-header-desktop);
   }
 
   &__row {
     width: 100%;
+    transition: 0.3s;
     @media all and (min-width: $breakpoint-tablet-L) {
       min-height: calc(#{var(--height-header-desktop)} / 2);
       margin: 17.5px auto; //  min-height / 2 = 17.5px
@@ -62,6 +65,17 @@
   }
 }
 
+.header._scroll {
+  @media all and (min-width: $breakpoint-tablet-L) {
+    min-height: var(--height-header-desktop-scroll);
+  }
+}
+
+.header__row._scroll {
+  @media all and (min-width: $breakpoint-tablet-L) {
+    margin: 6.5px auto;
+  }
+}
 
 .desktop-menu {
   display: none;
@@ -82,6 +96,7 @@
 
   .item-services {
     position: relative;
+
     &:hover {
       .submenu {
         opacity: 1;

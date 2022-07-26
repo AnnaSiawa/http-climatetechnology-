@@ -9,7 +9,7 @@
 
 <div class="content">
 
-	<div class="services-screen homepage-screen">
+	<div class="services-screen homepage-screen scroll-top">
 		<div class="services-screen__row">
 			<div class="inner">
 

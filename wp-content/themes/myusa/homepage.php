@@ -11,7 +11,7 @@
 
 	<?= Component::render('arrow'); ?>
 
-	<div class="main-screen homepage-screen">
+	<div class="main-screen homepage-screen scroll-top">
 		<div class="main-screen__row container">
 			<div class="inner">
 				<div class="main-screen__row_block">
@@ -267,7 +267,7 @@
 									'image' => '/dist/images/install-img1.png',
 									'title' => 'Замеры',
 									'disc' => 'Измерить помещение нужно для того, чтобы специалист определил, какой мощности кондиционер нужен в данное помещение.',
-									'links' => '/measure',
+									'link' => '/measure',
 								]); ?>
 						</div>
 						<div class="title-block">
@@ -277,7 +277,7 @@
 									'image' => '/dist/images/install-img2.png',
 									'title' => 'Монтаж',
 									'disc' => 'Благодаря монтажным работам кондиционеры и&nbsp;сплит-системы будут исправно функционировать в&nbsp;течение всего эксплуатационного срока',
-									'links' => '/mounting',
+									'link' => '/mounting',
 								]); ?>
 						</div>
 						<div class="title-block">
@@ -287,7 +287,7 @@
 									'image' => '/dist/images/install-img3.png',
 									'title' => 'Обслуживание',
 									'disc' => 'Комплекс работ для стабильной и&nbsp;правильной работы кондиционера, направленный на&nbsp;устранение неисправностей и&nbsp;прочего',
-									'links' => '/service',
+									'link' => '/service',
 								]); ?>
 						</div>
 					</div>

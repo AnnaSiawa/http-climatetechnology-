@@ -14,7 +14,7 @@ extract($params);
 	<h3><?= $title ?></h3>
 	<div class="install-disc"><?= $disc ?></div>
 	<div class="install-link">
-		<a href="/measure">
+		<a href="<?= $link ?>">
 			<span>Узнать подробнее</span>
 			<span>
 			<img class="install-arrow-hover" alt=""
