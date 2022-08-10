@@ -22,7 +22,7 @@
 					<a href="/service">
 						<div class="footer__item">Обслуживание</div>
 					</a>
-					<a href="#">
+					<a href="/products">
 						<div class="footer__item">Каталог</div>
 					</a>
 					<a href="#">

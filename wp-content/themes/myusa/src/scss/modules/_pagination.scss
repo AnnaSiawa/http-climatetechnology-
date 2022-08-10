@@ -1,0 +1,110 @@
+.pagination-wrap {
+  display: flex;
+  margin: 35px auto;
+  max-width: 282px;
+  width: 100%;
+  @media screen and (min-width: $breakpoint-tablet-L) {
+    max-width: 375px;
+    margin-top: 40px;
+    margin-bottom: 47px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+
+  li.current {
+    border: 1px solid $color-blue;
+    color: $color-white;
+    background-color: $color-blue;
+  }
+}
+
+.pagination li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  padding: 4.4px 0;
+  color: $color-dark;
+  text-align: center;
+  font-size: 16px;
+  user-select: none;
+  @media screen and (min-width: $breakpoint-tablet-L) {
+    width: 37px;
+    font-size: 25px;
+  }
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+.pagination li {
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+//.pagination a, .pagination i {
+//  display: inline-block;
+//  vertical-align: middle;
+//  width: 28px;
+//  padding: 4.4px 0;
+//  color: $color-dark;
+//  text-align: center;
+//  font-size: 16px;
+//  user-select: none;
+//  @media screen and (min-width: $breakpoint-tablet-L) {
+//    width: 37px;
+//    font-size: 25px;
+//  }
+//
+//  &:hover {
+//    text-decoration-line: underline;
+//  }
+//}
+//
+//.pagination a {
+//  border-radius: 50%;
+//  cursor: pointer;
+//
+//  &:not(:last-child) {
+//    margin-right: 5px;
+//  }
+//}
+//
+//.pagination a.current {
+//  border: 1px solid $color-blue;
+//  color: $color-white;
+//  background-color: $color-blue;
+//}
+//
+
+.pagination-btn-p, .pagination-btn-n {
+  padding: 13px !important;
+  background-image: url('../img/arrow-products.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0 !important;
+  margin-left: 0;
+  cursor: pointer;
+  @media screen and (min-width: $breakpoint-tablet-L) {
+    padding: 17px !important;
+  }
+  &.disabled {
+    cursor: default;
+  }
+}
+.pagination-btn-p {
+  transform: rotate(90deg);
+}
+.pagination-btn-n {
+  transform: rotate(270deg);
+}

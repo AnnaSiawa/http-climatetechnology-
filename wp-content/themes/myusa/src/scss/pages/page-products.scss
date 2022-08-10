@@ -1,0 +1,22 @@
+.products-screen {
+  .title-block {
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .product-swiper__slide {
+    position: relative;
+    padding-bottom: 25px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: $color-dark;
+    }
+  }
+}

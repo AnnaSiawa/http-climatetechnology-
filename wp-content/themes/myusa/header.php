@@ -50,20 +50,34 @@
 				<nav class="mobile-menu">
 					<a href="/" class="mobile-menu__title">«Технология климата»</a>
 					<ul class="mobile-menu__list">
-						<li><a href="#" class="nav-item">Каталог</a></li>
+						<li><a href="/products" class="nav-item">Каталог</a></li>
 						<li><a href="/measure" class="nav-item">Замеры</a></li>
 						<li><a href="/mounting" class="nav-item">Монтаж</a></li>
 						<li><a href="/service" class="nav-item">Обслуживание</a></li>
-						<li><a href="#" class="nav-item">Наши фото</a></li>
-						<li><a href="#" class="nav-item">Контакты</a></li>
+						<li><a href="#" class="nav-item photo-item" data-goto=".examples-screen">Наши фото</a></li>
+						<li><a href="#" class="nav-item contacts-item">Контакты</a></li>
 					</ul>
+
+					<div class="contacts-menu" onclick="">
+						<div class="">
+							<div class="footer__subtitle">Контакты</div>
+							<div class="footer__item">Адрес: Россия, г.Брянск, ул.Название</div>
+							<a class="footer__item" href="tel:+74832300126">
+								<div>Телефон: 30-01-26</div>
+							</a>
+							<a class="footer__item" href="mailto:nazvanie@mail.ru">
+								<div>E-mail: nazvanie@mail.ru</div>
+							</a>
+							<div class="footer__item">График работы: пн-вс с 9:00 до 18:00</div>
+						</div>
+					</div>
 				</nav>
 
 				<nav class="desktop-menu">
 					<a href="/" class="desktop-menu__title">«Технология климата»</a>
 					<ul class="desktop-menu__list">
 						<li class="item-services">
-							<a href="#" class="nav-item">Услуги</a>
+							<div class="nav-item">Услуги</div>
 							<div class="submenu">
 								<ul class="submenu__list">
 									<li><a href="/measure">Замеры</a></li>
@@ -72,14 +86,17 @@
 								</ul>
 							</div>
 						</li>
-						<li><a href="#" class="nav-item">Каталог</a></li>
-						<li><a href="#" class="nav-item">Контакты</a></li>
+						<li><a href="/products" class="nav-item">Каталог</a></li>
+						<li class="nav-item contacts-item">Контакты</li>
 					</ul>
 					<a href="tel:+74832300126" class="desktop-menu__cell">Брянск, тел. 30-01-26</a>
 				</nav>
 
 			</div>
 		</div>
+
+
+
 	</header>
 
 

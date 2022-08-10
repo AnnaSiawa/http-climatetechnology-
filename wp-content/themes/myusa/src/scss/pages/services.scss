@@ -1,8 +1,6 @@
 @import "../modules/breakpoints";
 
 .services-content {
-  //display: flex;
-  //flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
   @media all and (min-width: $breakpoint-tablet-L) {

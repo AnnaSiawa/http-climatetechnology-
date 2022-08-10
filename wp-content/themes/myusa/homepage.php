@@ -18,7 +18,7 @@
 					<h1>«Технология климата»</h1>
 					<div class="main-screen__disc">Продажа, монтаж и&nbsp;сервис климатического оборудования</div>
 					<div class="main-screen__btn btn">
-						<button>Выбрать кондиционер</button>
+						<button onclick="document.location.href='/products/';">Выбрать кондиционер</button>
 					</div>
 				</div>
 				<div class="main-screen__row_block"></div>

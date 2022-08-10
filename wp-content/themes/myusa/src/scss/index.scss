@@ -3,6 +3,7 @@
 //@import './modules/vars';
 @import './modules/breakpoints';
 @import './modules/colors';
+@import './modules/pagination';
 
 :root {
   --height-header-mobile: 37px;
@@ -180,3 +181,4 @@ input[type=number] {
 @import './pages/example';
 @import './pages/page-homepage';
 @import './pages/services';
+@import './pages/page-products';

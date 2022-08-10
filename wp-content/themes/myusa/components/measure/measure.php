@@ -19,25 +19,19 @@
 							<label for="name"></label>
 							<input
 								type="text"
+								autocomplete="off"
 								name="name"
 								id="name"
 								placeholder="Ваше имя"
 								class="_req"/>
 						</div>
-						<div class="input">
-							<div class="input-name">Фамилия</div>
-							<label for="surname"></label>
-							<input
-								type="text"
-								name="ser_name"
-								id="surname"
-								placeholder="Ваша фамилия"/>
-						</div>
+
 						<div class="input">
 							<div class="input-name">Номер телефона</div>
 							<label for="phone"></label>
 							<input
 								type="text"
+								autocomplete="off"
 								name="phone"
 								id="phone"
 								placeholder="Ваш номер телефона"
@@ -46,8 +40,33 @@
 						<div class="input">
 							<div class="input-name">Адрес</div>
 							<label for="address"></label>
-							<input type="text" name="address" id="address" placeholder="Ваш адрес"/>
+							<input
+								type="text"
+								autocomplete="off"
+								name="address"
+								id="address"
+								placeholder="Ваш адрес"/>
 						</div>
+
+						<div class="input">
+							<div class="input-name">Сообщение</div>
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Сообщение"></textarea>
+						</div>
+
+						<div class="checkbox">
+							<input
+								class="checkbox-input _req"
+								checked
+								type="checkbox"
+								name="agreement"
+								id="agreement"/>
+							<label class="checkbox-label" for="agreement">Я согласен на обработку
+								персональных данных</label>
+						</div>
+
 						<div class="measure-screen__btn btn">
 							<button
 								class="button"
