@@ -772,14 +772,133 @@
 										</div>
 									</div>
 								</div>
-<!--								<div class="pagination-wrap">-->
-<!--									<div id="pagination" class="pagination"></div>-->
-<!--								</div>-->
+								<div class="product-swiper__slide">
+									<div class="product-swiper__item item container">
+										<div class="product-swiper__img">
+											<img alt="product-swiper-img"
+												 src="<?php bloginfo('template_url'); ?>/dist/images/conditional2.webp">
+										</div>
+										<div class="product-swiper__content">
+											<div class="product-swiper__title">11 Кондиционер Lanzkraft
+												LSWH-20FC1N/LSAH-20FC1N
+											</div>
+											<div class="product-swiper__disk-wrap">
+												<div class="product-swiper__disk">
+													<div class="product-swiper__disk_title">Основные характеристики
+													</div>
+													<div class="product-swiper__disk_arrow">
+														<img alt="product-swiper-img"
+															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
+													</div>
+												</div>
+												<div class="product-swiper__detail">
+													<ul class="product-swiper__list">
+														<li class="product-swiper__item">Тип: сплит-система</li>
+														<li class="product-swiper__item">Размещение внутреннего блока:
+															настенный
+														</li>
+														<li class="product-swiper__item">Площадь помещения:
+															20&nbsp;кв.м
+														</li>
+														<li class="product-swiper__item">Тип фреона: R-410A</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="product-swiper__disk-wrap">
+												<div class="product-swiper__disk">
+													<div class="product-swiper__disk_title">Размеры</div>
+													<div class="product-swiper__disk_arrow">
+														<img alt="product-swiper-img"
+															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
+													</div>
+												</div>
+												<div class="product-swiper__detail">
+													<ul class="product-swiper__list">
+														<li class="product-swiper__item">Высота внутреннего
+															блока/внешнего блока: 27&nbsp;см/45.8&nbsp;см
+														</li>
+														<li class="product-swiper__item">Ширина внутреннего
+															блока/внешнего блока: 72&nbsp;см/63.5&nbsp;см
+														</li>
+														<li class="product-swiper__item">Глубина внутреннего
+															блока/внешнего блока: 20.1&nbsp;см/24&nbsp;см
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="product-swiper__btn btn">
+												<button>Купить за 24 990 ₽</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-swiper__slide">
+									<div class="product-swiper__item item container">
+										<div class="product-swiper__img">
+											<img alt="product-swiper-img"
+												 src="<?php bloginfo('template_url'); ?>/dist/images/conditional2.webp">
+										</div>
+										<div class="product-swiper__content">
+											<div class="product-swiper__title">11 Кондиционер Lanzkraft
+												LSWH-20FC1N/LSAH-20FC1N
+											</div>
+											<div class="product-swiper__disk-wrap">
+												<div class="product-swiper__disk">
+													<div class="product-swiper__disk_title">Основные характеристики
+													</div>
+													<div class="product-swiper__disk_arrow">
+														<img alt="product-swiper-img"
+															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
+													</div>
+												</div>
+												<div class="product-swiper__detail">
+													<ul class="product-swiper__list">
+														<li class="product-swiper__item">Тип: сплит-система</li>
+														<li class="product-swiper__item">Размещение внутреннего блока:
+															настенный
+														</li>
+														<li class="product-swiper__item">Площадь помещения:
+															20&nbsp;кв.м
+														</li>
+														<li class="product-swiper__item">Тип фреона: R-410A</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="product-swiper__disk-wrap">
+												<div class="product-swiper__disk">
+													<div class="product-swiper__disk_title">Размеры</div>
+													<div class="product-swiper__disk_arrow">
+														<img alt="product-swiper-img"
+															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
+													</div>
+												</div>
+												<div class="product-swiper__detail">
+													<ul class="product-swiper__list">
+														<li class="product-swiper__item">Высота внутреннего
+															блока/внешнего блока: 27&nbsp;см/45.8&nbsp;см
+														</li>
+														<li class="product-swiper__item">Ширина внутреннего
+															блока/внешнего блока: 72&nbsp;см/63.5&nbsp;см
+														</li>
+														<li class="product-swiper__item">Глубина внутреннего
+															блока/внешнего блока: 20.1&nbsp;см/24&nbsp;см
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="product-swiper__btn btn">
+												<button>Купить за 24 990 ₽</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="pagination-wrap">
-								<a class="pagination-btn-p"></a>
+								<a data-goto=".scroll-top-catalog" class="pagination-btn-p"></a>
 								<ul id="pagination" class="pagination"></ul>
-								<a class="pagination-btn-n"></a>
+								<a data-goto=".scroll-top-catalog" class="pagination-btn-n"></a>
 							</div>
 						</div>
 					</div>
