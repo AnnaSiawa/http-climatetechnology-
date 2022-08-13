@@ -52,41 +52,6 @@
   }
 }
 
-//.pagination a, .pagination i {
-//  display: inline-block;
-//  vertical-align: middle;
-//  width: 28px;
-//  padding: 4.4px 0;
-//  color: $color-dark;
-//  text-align: center;
-//  font-size: 16px;
-//  user-select: none;
-//  @media screen and (min-width: $breakpoint-tablet-L) {
-//    width: 37px;
-//    font-size: 25px;
-//  }
-//
-//  &:hover {
-//    text-decoration-line: underline;
-//  }
-//}
-//
-//.pagination a {
-//  border-radius: 50%;
-//  cursor: pointer;
-//
-//  &:not(:last-child) {
-//    margin-right: 5px;
-//  }
-//}
-//
-//.pagination a.current {
-//  border: 1px solid $color-blue;
-//  color: $color-white;
-//  background-color: $color-blue;
-//}
-//
-
 .pagination-btn-p, .pagination-btn-n {
   padding: 13px !important;
   background-image: url('../img/arrow-products.png');
@@ -100,6 +65,7 @@
   }
   &.disabled {
     cursor: default;
+    opacity: 0.5;
   }
 }
 .pagination-btn-p {
@@ -107,4 +73,25 @@
 }
 .pagination-btn-n {
   transform: rotate(270deg);
+}
+
+._hide {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0);
+}
+._hide::after {
+  content: "...";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  background-color: #fff;
+}
+._hide+._hide {
+  display: none;
 }

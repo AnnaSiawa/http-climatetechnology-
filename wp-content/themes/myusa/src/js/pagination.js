@@ -1,7 +1,7 @@
 let pagination = document.querySelector('#pagination');
 let slideListsWrap = document.querySelector('.product-swiper__wrapper');
 let slideLists = document.querySelectorAll('.product-swiper__slide');
-let arrSlideLists = Array.from(slideLists);
+let arrSlideLists = Array.from(slideLists); // или let arrSlideLists = [...slideLists];
 let activeLi = document.querySelector('#pagination li.current');
 let prevPage = document.querySelector('.pagination-btn-p');
 let nextPage = document.querySelector('.pagination-btn-n');
@@ -32,8 +32,8 @@ for (let item of items) {
     });
 }
 
+//скролл к первой записи после клика по кнопке пагинации
 function scrollPage(e) {
-    //скролл к первой записи после клика по кнопке пагинации
     const btnScroll = e.currentTarget;
     const gotoBlock = document.querySelector(btnScroll.dataset.goto);
     if (gotoBlock) {
@@ -45,9 +45,13 @@ function scrollPage(e) {
 }
 
 function showPage(item) {
-    //выделить активную кнопку пагинации
     if (activeLi) {
+        //выделить активную кнопку пагинации
         activeLi.classList.remove('current');
+
+        //заблокировать стрелки пагинации (prev, next), когда дошли до последней страницы
+        prevPage.classList.remove('disabled');
+        nextPage.classList.remove('disabled');
     }
     activeLi = item;
     item.classList.add('current');
@@ -63,17 +67,45 @@ function showPage(item) {
     for (let note of notes) {
         slideListsWrap.appendChild(note);
     }
+
+    //заблокировать стрелки пагинации (prev, next), когда дошли до последней страницы
+    if (activeLi.innerHTML && (+activeLi.innerHTML === 1)) {
+        prevPage.classList.add('disabled');
+    }
+    if (activeLi.innerHTML && (+activeLi.innerHTML === items.length)) {
+        nextPage.classList.add('disabled');
+    }
+
+    hideOverPages();
 }
 
 prevPage.addEventListener('click', function (e) {
     if (activeLi.previousElementSibling) {
         showPage(activeLi.previousElementSibling);
-        scrollPage(e);
+        // scrollPage(e);
     }
 });
 nextPage.addEventListener('click', function (e) {
     if (activeLi.nextElementSibling) {
         showPage(activeLi.nextElementSibling);
-        scrollPage(e);
+        // scrollPage(e);
     }
 });
+
+//Скрытие промежуточных номеров страниц
+function hideOverPages() {
+    let items = [...pagination.children];
+    if (items.length > 5) {
+        items.forEach((item) => item.classList.add("_hide"));
+        items[0].classList.remove("_hide");
+        if (activeLi.previousElementSibling) {
+            console.log(activeLi.previousElementSibling);
+            activeLi.previousElementSibling.classList.remove("_hide");
+        }
+        activeLi.classList.remove("_hide");
+        if (activeLi.nextElementSibling) {
+            activeLi.nextElementSibling.classList.remove("_hide");
+        }
+        items[items.length - 1].classList.remove("_hide");
+    }
+}
