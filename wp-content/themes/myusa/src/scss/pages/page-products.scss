@@ -44,12 +44,27 @@
   &__wrap {
     background-color: rgba(249, 249, 249, 1);
     padding: 15px;
+    margin-bottom: 35px;
+    //box-shadow: 0 0 62px rgba(0, 0, 0, 0.16);
+  }
+
+  &__btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .btn {
+    margin: 0;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     //max-width: 1100px;
 
     &:not(:last-child) {

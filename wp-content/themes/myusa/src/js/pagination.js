@@ -109,3 +109,16 @@ function hideOverPages() {
         items[items.length - 1].classList.remove("_hide");
     }
 }
+
+//сбросить фильтр
+let resetBtn = document.querySelector('#reset-filter');
+let checkboxInputs = document.querySelectorAll('.checkbox-input');
+
+resetBtn.addEventListener('click', function () {
+    let arrCheckboxInputs = [...checkboxInputs];
+    for (let checkboxInput of arrCheckboxInputs) {
+        if (checkboxInput.checked) {
+            checkboxInput.checked = false;
+        }
+    }
+});

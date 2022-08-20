@@ -61,6 +61,8 @@
 							[
 								'label' => 'Я согласен на обработку персональных данных',
 								'id' => 'agreement',
+								'req' => '_req',
+								'checked' => 'checked',
 							]); ?>
 
 						<div class="measure-screen__btn btn">

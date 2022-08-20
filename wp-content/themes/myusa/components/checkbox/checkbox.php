@@ -2,14 +2,16 @@
 $image = "";
 $label = "";
 $id = "";
+$req = "";
+$checked = "";
 
 extract($params);
 ?>
 
 <div class="checkbox">
 	<input
-		class="checkbox-input _req"
-		checked
+		class="checkbox-input <?= $req ?>"
+		<?= $checked ?>
 		type="checkbox"
 		name="agreement"
 		id="<?= $id ?>"/>

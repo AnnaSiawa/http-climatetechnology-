@@ -94,6 +94,29 @@
 								</div>
 							</div>
 							<div class="product-filter__row">
+								<div class="product-filter__title">Размещение внутреннего блока</div>
+								<div class="product-filter__disc">
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'Настенный',
+											'id' => 'wall',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'Потолочный',
+											'id' => 'ceiling',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '',
+											'id' => '',
+										]); ?>
+								</div>
+							</div>
+							<div class="product-filter__row">
 								<div class="product-filter__title">Для помещений площадью:</div>
 								<div class="product-filter__disc">
 									<?= Component::render(
@@ -163,6 +186,15 @@
 											'id' => 'square100',
 										]); ?>
 								</div>
+							</div>
+						</div>
+
+						<div class="product-filter__btn-container">
+							<div class="product-filter__btn btn">
+								<button id="reset-filter">Сбросить</button>
+							</div>
+							<div class="product-filter__btn btn">
+								<button>Подобрать</button>
 							</div>
 						</div>
 					</div>
