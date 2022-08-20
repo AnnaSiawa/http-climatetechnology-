@@ -1,0 +1,43 @@
+.checkbox {
+  //width: 100%;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+  transform: scale(1); //показать
+}
+
+.checkbox-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  width: calc(100% + 24px);
+  line-height: 25px;
+}
+
+.checkbox-label::before {
+  content: '';
+  align-self: flex-start;
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: $color-blue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.checkbox-label::after {
+  content: '\2713';
+  color: $color-white;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: scale(0); //скрыть
+  transition: transform 0.5s ease;
+}

@@ -21,8 +21,153 @@
 				</div>
 
 				<div class="title-block">
-					<div class="product-slider container">
+					<div class="product-filter container">
+						<div class="product-filter__wrap">
+							<div class="product-filter__row">
+								<div class="product-filter__title">Бренды</div>
+								<div class="product-filter__disc">
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'Hisense',
+											'id' => 'Hisense',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'FUNAI',
+											'id' => 'FUNAI',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'KENTATSU',
+											'id' => 'KENTATSU',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'LG',
+											'id' => 'LG',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'MITSUBISHI',
+											'id' => 'MITSUBISHI',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'ROYAL CLIMA',
+											'id' => 'ROYALCLIMA',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'ZANUSSI',
+											'id' => 'ZANUSSI',
+										]); ?>
+								</div>
+							</div>
+							<div class="product-filter__row">
+								<div class="product-filter__title">По типу</div>
+								<div class="product-filter__disc">
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'Инверторные сплит-системы',
+											'id' => 'invert',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'Неинверторные сплит-системы',
+											'id' => 'not-invert',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'Разное',
+											'id' => 'different',
+										]); ?>
+								</div>
+							</div>
+							<div class="product-filter__row">
+								<div class="product-filter__title">Для помещений площадью:</div>
+								<div class="product-filter__disc">
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '1-20 кв.м',
+											'id' => 'square1',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '20-25 кв.м',
+											'id' => 'square20',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '25-30 кв.м',
+											'id' => 'square25',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '30-40 кв.м',
+											'id' => 'square30',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '40-50 кв.м',
+											'id' => 'square40',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '50-60 кв.м',
+											'id' => 'square50',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '60-70 кв.м',
+											'id' => 'square60',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '70-80 кв.м',
+											'id' => 'square70',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '80-90 кв.м',
+											'id' => 'square80',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => '90-100 кв.м',
+											'id' => 'square90',
+										]); ?>
+									<?= Component::render(
+										'checkbox',
+										[
+											'label' => 'более 100 кв.м',
+											'id' => 'square100',
+										]); ?>
+								</div>
+							</div>
+						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</div>
@@ -906,6 +1051,7 @@
 			</div>
 		</div>
 	</div>
+
 </div>
 
 <?php get_footer(); ?>

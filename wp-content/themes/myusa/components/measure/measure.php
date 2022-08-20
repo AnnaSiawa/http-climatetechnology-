@@ -56,16 +56,12 @@
 								placeholder="Сообщение"></textarea>
 						</div>
 
-						<div class="checkbox">
-							<input
-								class="checkbox-input _req"
-								checked
-								type="checkbox"
-								name="agreement"
-								id="agreement"/>
-							<label class="checkbox-label" for="agreement">Я согласен на обработку
-								персональных данных</label>
-						</div>
+						<?= Component::render(
+							'checkbox',
+							[
+								'label' => 'Я согласен на обработку персональных данных',
+								'id' => 'agreement',
+							]); ?>
 
 						<div class="measure-screen__btn btn">
 							<button

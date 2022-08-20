@@ -82,13 +82,13 @@ function showPage(item) {
 prevPage.addEventListener('click', function (e) {
     if (activeLi.previousElementSibling) {
         showPage(activeLi.previousElementSibling);
-        // scrollPage(e);
+        scrollPage(e);
     }
 });
 nextPage.addEventListener('click', function (e) {
     if (activeLi.nextElementSibling) {
         showPage(activeLi.nextElementSibling);
-        // scrollPage(e);
+        scrollPage(e);
     }
 });
 

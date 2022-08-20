@@ -20,7 +20,7 @@ $mail->setFrom('annashursh1992@gmail.com'); // от кого будет уход
 $mail->addAddress('anya.shurshalova@mail.ru');     // Кому будет уходить письмо
 $mail->isHTML(true);                                  // Set email format to HTML
 $mail->Subject = 'Заявка с сайта';
-$mail->Body = '' . $name . ' ' . ' оставил(a) заявку, номер телефона: ' . $phone . '<br>адрес этого пользователя: ' . $address . '<br>Сообщение пользователя ' . $message;
+$mail->Body = '' . $name . ' ' . ' оставил(a) заявку, номер телефона: ' . $phone . '<br>Адрес этого пользователя: ' . $address . '<br>Сообщение пользователя: ' . $message;
 
 if (!$mail->send()) {
 	$message = 'ошибка';
