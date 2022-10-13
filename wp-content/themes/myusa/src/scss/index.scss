@@ -130,11 +130,11 @@ input[type=number] {
 
 .homepage-screen {
   margin-bottom: 60px;
-  @media all and (min-width: $breakpoint-tablet-L) {
-    margin-bottom: 100px;
-  }
+  //@media all and (min-width: $breakpoint-tablet-L) {
+  //  margin-bottom: 100px;
+  //}
   @media all and (min-width: $breakpoint-desktop-M) {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
   }
 }
 
@@ -182,3 +182,9 @@ input[type=number] {
 @import './pages/page-homepage';
 @import './pages/services';
 @import './pages/page-products';
+
+@import './animation/examples-animation';
+@import './animation/measure-animation';
+@import './animation/filter-animation';
+@import './animation/install-animation';
+@import './animation/choose-animation';

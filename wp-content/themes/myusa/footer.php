@@ -26,7 +26,7 @@
 						<div class="footer__item">Каталог</div>
 					</a>
 					<a href="#">
-						<div class="footer__item">Наши фото</div>
+						<div class="footer__item">Наши работы</div>
 					</a>
 				</div>
 			</div>

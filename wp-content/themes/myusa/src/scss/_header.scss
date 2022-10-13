@@ -44,6 +44,7 @@
   }
 
   .mobile-menu-cell {
+    position: relative;
     opacity: 1;
     transition: opacity 0.4s;
     pointer-events: visible;
@@ -56,6 +57,19 @@
     span, a {
       color: $color-white;
       font-family: $secondaryFont;
+    }
+
+    .mobile-menu-cell-svg {
+      position: absolute;
+      top: -10px;
+      left: -40px;
+      max-width: 35px;
+      width: 100%;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 

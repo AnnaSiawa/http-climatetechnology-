@@ -21,6 +21,16 @@
       background-color: $color-dark;
     }
   }
+
+  span {
+    &:last-child {
+      max-width: 95px;
+    }
+
+    svg {
+      transform: translateY(6px);
+    }
+  }
 }
 
 .product-filter {

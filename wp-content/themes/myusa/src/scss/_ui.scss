@@ -65,6 +65,8 @@ h1 {
 }
 
 h2 {
+  display: flex;
+  align-items: center;
   width: 100%;
   padding: 10px 20px !important;
   font-style: normal;
@@ -82,12 +84,47 @@ h2 {
     font-size: 60px;
     line-height: 69px;
   }
+
+  span {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      max-width: 60px;
+      width: 100%;
+    }
+
+    svg, img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.scroll-title {
+  opacity: 0;
+  transition: ease 1s;
+}
+
+.scroll-title.box--visible {
+  opacity: 1;
 }
 
 // links
 a {
   color: $color-white;
   transition: all 0.4s;
+
+  span {
+    transition: all 0.4s;
+    &:hover {
+      color: $color-blue;
+    }
+  }
 
   &:hover {
     color: $color-blue;
@@ -105,14 +142,39 @@ a {
   }
 
   &__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 0;
+    top: 15px;
     transform: translateY(-24px);
     font-size: 24px;
 
     span, a {
       color: $color-white;
       font-family: $secondaryFont;
+    }
+
+    span {
+      &:last-child {
+        max-width: 58px;
+        width: 100%;
+        margin-left: 10px;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .contacts-item {
+    transition: color .4s;
+
+    &:hover {
+      color: $color-blue;
     }
   }
 }

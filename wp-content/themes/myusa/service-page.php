@@ -14,7 +14,7 @@
 			<div class="inner">
 
 				<div class="title-block">
-					<h2 class="container">Обслуживание и ремонт кондиционеров</h2>
+					<h2 class="container scroll-title">Обслуживание и ремонт кондиционеров</h2>
 				</div>
 
 				<div class="title-block">

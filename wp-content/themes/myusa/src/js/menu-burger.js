@@ -27,7 +27,7 @@ window.onload = function () {
             toggleMenu();
         });
 
-        //прокрутка до блока Наши фото
+        //прокрутка до блока Наши работы
         const itemPhotoScroll = document.querySelector('.photo-item[data-goto]');
         itemPhotoScroll.addEventListener('click', onItemScrollPhoto);
 
