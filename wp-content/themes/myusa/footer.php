@@ -45,6 +45,95 @@
 	</div>
 </footer>
 
+<div class="modal modal-buy">
+	<div class="modal__wrap">
+		<div class="modal__inner">
+			<h2>Выбранный кондиционер Выбранный кондиционер Выбранный кондиционер</h2>
+			<div class="modal__disc">Если вас заинтересовала данная модель, введите ваши данные, чтобы мы&nbsp;могли
+				связаться с&nbsp;вами
+			</div>
+
+			<div class="measure-screen-form container">
+				<form action="mail.php" method="POST" id="form-mail">
+					<div class="input">
+						<div class="input-name">Имя</div>
+						<label for="name"></label>
+						<input
+							type="text"
+							autocomplete="off"
+							name="name"
+							id="name"
+							placeholder="Ваше имя"
+							class="_req"/>
+					</div>
+
+					<div class="input">
+						<div class="input-name">Номер телефона</div>
+						<label for="phone"></label>
+						<input
+							type="text"
+							autocomplete="off"
+							name="phone"
+							id="phone"
+							placeholder="Ваш номер телефона"
+							class="_req"/>
+					</div>
+
+					<div class="input">
+						<div class="input-name">Сообщение</div>
+						<textarea
+							name="message"
+							id="message"
+							placeholder="Сообщение"></textarea>
+					</div>
+
+					<?= Component::render(
+						'checkbox',
+						[
+							'label' => 'Я согласен на обработку персональных данных',
+							'id' => 'agreement',
+							'req' => '_req',
+							'checked' => 'checked',
+						]); ?>
+
+					<div class="measure-screen__btn btn">
+						<button
+							class="button"
+							type="submit"
+							id="button">
+							Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<?= Component::render(
+				'install',
+				[
+					'text' => 'Вернуться назад',
+					'link' => '#',
+					'class' => 'go-back',
+				]); ?>
+		</div>
+	</div>
+</div>
+
+<div class="modal modal-sign-up">
+	<div class="modal__wrap">
+		<div class="modal__inner">
+			<h2>Спасибо за заявку!</h2>
+			<div class="modal__disc">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время для уточнения некоторых
+				вопросов.
+			</div>
+			<?= Component::render(
+				'install',
+				[
+					'text' => 'Вернуться назад',
+					'link' => '#',
+					'class' => 'go-back',
+				]); ?>
+		</div>
+	</div>
 </div>
 <?php wp_footer(); ?>
 

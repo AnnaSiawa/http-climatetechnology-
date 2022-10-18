@@ -1,5 +1,8 @@
-
 const form = document.getElementById('form-mail');
+let modalBuy = document.querySelector('.modal-buy');
+let modalSignUp = document.querySelector('.modal-sign-up');
+let btnChoose = document.querySelectorAll('.btn-choose');
+let btnBack = document.querySelectorAll('.go-back');
 
 if (form) {
     form.addEventListener('submit', formSend);
@@ -20,7 +23,8 @@ async function formSend(e) {
         if (response.ok) {
             let result = await response.json();
             // let result = response.json();
-            alert(result.message);
+            // alert(result.message);
+            modalSignUp.classList.add('active');
             form.reset();
         } else {
             alert('ошибка');
@@ -56,4 +60,28 @@ async function formSend(e) {
          input.parentElement.classList.remove('_error');
          input.classList.remove('_error');
      }
+}
+
+//открыть форму выбора кондиционера
+if (btnChoose) {
+    let arrBtnChoose = [...btnChoose];
+    arrBtnChoose.forEach(item => {
+        item.addEventListener('click', e => {
+            e.stopPropagation();
+            modalBuy.classList.add('active');
+        });
+    });
+}
+
+//закрыть форму выбора кондиционера/обратной связи
+if (btnBack) {
+    let arrBtnBack = [...btnBack];
+    console.log(arrBtnBack);
+    arrBtnBack.forEach(item => {
+        item.addEventListener('click', e => {
+            e.stopPropagation();
+            modalBuy.classList.remove('active');
+            modalSignUp.classList.remove('active');
+        });
+    })
 }

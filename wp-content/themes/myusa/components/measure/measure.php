@@ -89,16 +89,16 @@
 								placeholder="Ваш номер телефона"
 								class="_req"/>
 						</div>
-						<div class="input">
-							<div class="input-name">Адрес</div>
-							<label for="address"></label>
-							<input
-								type="text"
-								autocomplete="off"
-								name="address"
-								id="address"
-								placeholder="Ваш адрес"/>
-						</div>
+<!--						<div class="input">-->
+<!--							<div class="input-name">Адрес</div>-->
+<!--							<label for="address"></label>-->
+<!--							<input-->
+<!--								type="text"-->
+<!--								autocomplete="off"-->
+<!--								name="address"-->
+<!--								id="address"-->
+<!--								placeholder="Ваш адрес"/>-->
+<!--						</div>-->
 
 						<div class="input">
 							<div class="input-name">Сообщение</div>

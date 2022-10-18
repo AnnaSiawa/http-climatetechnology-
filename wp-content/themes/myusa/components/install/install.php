@@ -3,6 +3,8 @@ $image = "";
 $title = "";
 $disc = "";
 $link = "";
+$text = "";
+$class = "";
 
 extract($params);
 ?>
@@ -14,8 +16,8 @@ extract($params);
 	<h3><?= $title ?></h3>
 	<div class="install-disc"><?= $disc ?></div>
 	<div class="install-link">
-		<a href="<?= $link ?>">
-			<span>Узнать подробнее</span>
+		<a class="<?= $class ?>" href="<?= $link ?>">
+			<span><?= $text ?></span>
 			<span>
 			<img class="install-arrow-hover" alt=""
 				 src="<?php bloginfo('template_url'); ?>/dist/images/arrow-hover.png">

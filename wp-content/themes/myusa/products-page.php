@@ -846,7 +846,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>30 190 ₽</span></button>
+												<button class="btn-choose">Купить за <span>30 190 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -903,7 +903,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>44 990 ₽</span></button>
+												<button class="btn-choose">Купить за <span>44 990 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -960,7 +960,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>36 490 ₽</span></button>
+												<button class="btn-choose">Купить за <span>36 490 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1017,7 +1017,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>33 700 ₽</span></button>
+												<button class="btn-choose">Купить за <span>33 700 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1074,7 +1074,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>58 491 ₽</span></button>
+												<button class="btn-choose">Купить за <span>58 491 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1131,7 +1131,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>29 000 ₽</span></button>
+												<button class="btn-choose">Купить за <span>29 000 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1188,7 +1188,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>238 550 ₽</span></button>
+												<button class="btn-choose">Купить за <span>238 550 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1245,7 +1245,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>103 200 ₽</span></button>
+												<button class="btn-choose">Купить за <span>103 200 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1302,7 +1302,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>188 190 ₽</span></button>
+												<button class="btn-choose">Купить за <span>188 190 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1359,7 +1359,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>103 200 ₽</span></button>
+												<button class="btn-choose">Купить за <span>103 200 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1416,7 +1416,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>188 190 ₽</span></button>
+												<button class="btn-choose">Купить за <span>188 190 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1473,7 +1473,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>188 190 ₽</span></button>
+												<button class="btn-choose">Купить за <span>188 190 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1530,7 +1530,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за <span>188 190 ₽</span></button>
+												<button class="btn-choose">Купить за <span>188 190 ₽</span></button>
 											</div>
 										</div>
 									</div>

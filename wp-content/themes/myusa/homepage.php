@@ -594,7 +594,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за 24 990 ₽</button>
+												<button class="btn-choose">Купить за 24 990 ₽</button>
 											</div>
 										</div>
 									</div>
@@ -657,7 +657,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за 24 990 ₽</button>
+												<button class="btn-choose">Купить за 24 990 ₽</button>
 											</div>
 										</div>
 									</div>
@@ -720,7 +720,7 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button>Купить за 24 990 ₽</button>
+												<button class="btn-choose">Купить за 24 990 ₽</button>
 											</div>
 										</div>
 									</div>
@@ -1187,6 +1187,7 @@
 									'title' => 'Замеры',
 									'disc' => 'Измерить помещение нужно для того, чтобы специалист определил, какой мощности кондиционер нужен в данное помещение.',
 									'link' => '/measure',
+									'text' => 'Узнать подробнее',
 								]); ?>
 						</div>
 						<div class="title-block">
@@ -1197,6 +1198,7 @@
 									'title' => 'Монтаж',
 									'disc' => 'Благодаря монтажным работам кондиционеры и&nbsp;сплит-системы будут исправно функционировать в&nbsp;течение всего эксплуатационного срока',
 									'link' => '/mounting',
+									'text' => 'Узнать подробнее',
 								]); ?>
 						</div>
 						<div class="title-block">
@@ -1207,6 +1209,7 @@
 									'title' => 'Обслуживание',
 									'disc' => 'Комплекс работ для стабильной и&nbsp;правильной работы кондиционера, направленный на&nbsp;устранение неисправностей и&nbsp;прочего',
 									'link' => '/service',
+									'text' => 'Узнать подробнее',
 								]); ?>
 						</div>
 					</div>

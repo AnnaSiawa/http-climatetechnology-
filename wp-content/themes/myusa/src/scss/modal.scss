@@ -1,0 +1,97 @@
+.modal-buy {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  .measure-screen__btn {
+    margin: 25px auto 0;
+  }
+}
+
+.modal-sign-up {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-sign-up.active,
+.modal-buy.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.77);
+  //opacity: 0.2;
+  //filter: blur(3px);
+
+  h2 {
+    display: block;
+    text-align: center;
+    padding: 0 0 10px !important;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: bold;
+  }
+
+  &__wrap {
+    width: 100%;
+    max-width: 802px;
+    margin: 0 10px;
+    background-color: $color-white;
+    border-radius: 10px;
+    border: 1px solid $color-dark;
+    color: $color-dark;
+  }
+
+  &__inner {
+    padding: 30px 10px;
+  }
+
+  &__disc {
+    width: 100%;
+    max-width: 427px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      font-size: 15px;
+    }
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  .install-image {
+    display: none;
+  }
+
+  .install-disc {
+    display: none;
+  }
+
+  .install-link {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .input-name {
+    font-size: 20px;
+  }
+
+  .measure-screen-form.container {
+    padding: 0 10px 40px;
+  }
+}

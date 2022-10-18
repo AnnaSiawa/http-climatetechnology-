@@ -1,6 +1,5 @@
 @import './fonts';
 @import './modules/fonts';
-//@import './modules/vars';
 @import './modules/breakpoints';
 @import './modules/colors';
 @import './modules/pagination';
@@ -176,6 +175,7 @@ input[type=number] {
 @import './footer';
 @import './ui';
 @import './anim';
+@import './modal';
 @import './modules/swiper';
 
 @import './pages/example';
