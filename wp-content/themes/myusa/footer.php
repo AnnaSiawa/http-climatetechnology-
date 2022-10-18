@@ -118,6 +118,21 @@
 	</div>
 </div>
 
+<div class="modal modal-send-message">
+	<div class="modal__wrap">
+		<div class="modal__inner">
+			<h2>Ваше сообщение отправлено, наш специалист свяжется с&nbsp;Вами в&nbsp;ближайшее&nbspвремя</h2>
+			<?= Component::render(
+				'install',
+				[
+					'text' => 'Вернуться назад',
+					'link' => '#',
+					'class' => 'go-back',
+				]); ?>
+		</div>
+	</div>
+</div>
+
 <div class="modal modal-sign-up">
 	<div class="modal__wrap">
 		<div class="modal__inner">

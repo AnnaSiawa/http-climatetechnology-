@@ -1,6 +1,7 @@
 const form = document.getElementById('form-mail');
 let modalBuy = document.querySelector('.modal-buy');
 let modalSignUp = document.querySelector('.modal-sign-up');
+let modalSendMessage = document.querySelector('.modal-send-message');
 let btnChoose = document.querySelectorAll('.btn-choose');
 let btnBack = document.querySelectorAll('.go-back');
 
@@ -82,6 +83,7 @@ if (btnBack) {
             e.stopPropagation();
             modalBuy.classList.remove('active');
             modalSignUp.classList.remove('active');
+            modalSendMessage.classList.remove('active');
         });
     })
 }

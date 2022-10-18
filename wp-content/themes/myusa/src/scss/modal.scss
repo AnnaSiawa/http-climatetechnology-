@@ -14,8 +14,15 @@
   pointer-events: none;
 }
 
+.modal-send-message {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .modal-sign-up.active,
-.modal-buy.active {
+.modal-buy.active,
+.modal-send-message.active {
   opacity: 1;
   visibility: visible;
   pointer-events: visible;
