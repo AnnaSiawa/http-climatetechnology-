@@ -68,11 +68,13 @@ const once = {
   once: true
 };
 
-measureFormSubmitButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  let type = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
-  sendForm(type);
-}, once);
+if (measureFormSubmitButton) {
+  measureFormSubmitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    let type = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
+    sendForm(type);
+  }, once);
+}
 
 //открыть форму выбора кондиционера
 if (btnChoose) {
