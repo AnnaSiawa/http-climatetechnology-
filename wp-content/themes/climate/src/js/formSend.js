@@ -6,8 +6,7 @@ const btnChoose = document.querySelectorAll('.btn-choose');
 const btnBack = document.querySelectorAll('.go-back');
 
 const xhrHeaders = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
+    'Accept': 'application/json'
 };
 
 const inputs = {
@@ -54,11 +53,11 @@ if (submitButton) {
         fetch('/mail.php', {
           method: 'POST',
           headers: xhrHeaders,
-          body: JSON.stringify({
+          body: {
             name: inputs.name.value.trim(),
             phone: inputs.phone.value.trim(),
             message: inputs.message.value.trim()
-          })
+          }
         })
         .then(response => {
             if (response.success) {

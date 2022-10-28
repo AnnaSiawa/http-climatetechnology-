@@ -10,13 +10,10 @@ $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
 
-$json = file_get_contents('php://input');
-$request = json_decode($json);
-
-$name = $request['name'];
-$phone = $request['phone'];
-//$address = $request['address'];
-$message = $request['message'];
+$name = $POST_['name'];
+$phone = $POST_['phone'];
+//$address = $POST_['address'];
+$message = $POST_['message'];
 
 $mail->setFrom('annashursh1992@gmail.com'); // от кого будет уходить письмо?
 $mail->addAddress('anya.shurshalova@mail.ru');     // Кому будет уходить письмо
