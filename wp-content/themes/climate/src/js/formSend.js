@@ -25,8 +25,7 @@ function clearInputs() {
     }
 }
 
-function formSubmitHandler(event) {
-    event.preventDefault();
+function sendForm(event) {
     let formType = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
     let form = document.querySelector(`.${formType}-form`);
     let inputs = {
@@ -66,7 +65,10 @@ function formSubmitHandler(event) {
     }
 }
 
-orderFormSubmitButton.addEventListener('click', formSubmitHandler, once);
+orderFormSubmitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  sendForm(event);
+}, once);
 
 //открыть форму выбора кондиционера
 if (btnChoose) {
@@ -77,7 +79,10 @@ if (btnChoose) {
             modalBuy.classList.add('active');
             modalFormHasOpened = true;
             const measureFormSubmitButton = document.querySelector('.measure-form-btn');
-            measureFormSubmitButton.addEventListener('click', formSubmitHandler, once);
+            measureFormSubmitButton.addEventListener('click', (event) => {
+              event.preventDefault();
+              sendForm(event);
+            }, once);
         });
     });
 }
