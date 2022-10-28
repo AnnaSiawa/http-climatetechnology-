@@ -63,7 +63,7 @@
 					<img src="<?php bloginfo('template_url'); ?>/dist/images/measure-img.png" alt="">
 				</div>
 				<div class="measure-screen-form container">
-					<form action="mail.php" method="POST" id="form-mail">
+					<form id="form-mail">
 
 						<div class="form-title">Необходимо заполнить данные:</div>
 						<div class="input">

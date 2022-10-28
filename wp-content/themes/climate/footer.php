@@ -54,7 +54,7 @@
 			</div>
 
 			<div class="measure-screen-form container">
-				<form action="mail.php" method="POST" id="form-mail">
+				<form id="form-mail">
 					<div class="input">
 						<div class="input-name">Имя</div>
 						<label for="name"></label>
