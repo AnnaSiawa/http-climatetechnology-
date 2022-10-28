@@ -1,4 +1,4 @@
-const orderFormSubmitButton = document.querySelector('.order-form-btn');
+const measureFormSubmitButton = document.querySelector('.measure-form-btn');
 const modalBuy = document.querySelector('.modal-buy');
 const modalSignUp = document.querySelector('.modal-sign-up');
 const modalSendMessage = document.querySelector('.modal-send-message');
@@ -25,8 +25,7 @@ function clearInputs() {
     }
 }
 
-function sendForm(event) {
-    let formType = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
+function sendForm(formType) {
     let form = document.querySelector(`.${formType}-form`);
     let inputs = {
       'name': document.querySelector(`.${formType}-form-name`),
@@ -65,9 +64,10 @@ function sendForm(event) {
     }
 }
 
-orderFormSubmitButton.addEventListener('click', (event) => {
+measureFormSubmitButton.addEventListener('click', (event) => {
   event.preventDefault();
-  sendForm(event);
+  let type = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
+  sendForm(type);
 }, once);
 
 //открыть форму выбора кондиционера
@@ -78,10 +78,11 @@ if (btnChoose) {
             e.stopPropagation();
             modalBuy.classList.add('active');
             modalFormHasOpened = true;
-            const measureFormSubmitButton = document.querySelector('.measure-form-btn');
-            measureFormSubmitButton.addEventListener('click', (event) => {
+            const orderFormSubmitButton = document.querySelector('.order-form-btn');
+            orderFormSubmitButton.addEventListener('click', (event) => {
               event.preventDefault();
-              sendForm(event);
+              let type = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
+              sendForm(type);
             }, once);
         });
     });
@@ -97,7 +98,6 @@ if (btnBack) {
             modalBuy.classList.remove('active');
             modalSignUp.classList.remove('active');
             modalSendMessage.classList.remove('active');
-            submitButton = document.querySelector('.order-form-btn');
         });
     })
 }
