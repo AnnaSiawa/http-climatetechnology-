@@ -1,4 +1,4 @@
-const submitButton = document.querySelector('.send-form-btn');
+const orderFormSubmitButton = document.querySelector('.order-form-btn');
 const modalBuy = document.querySelector('.modal-buy');
 const modalSignUp = document.querySelector('.modal-sign-up');
 const modalSendMessage = document.querySelector('.modal-send-message');
@@ -6,7 +6,6 @@ const btnChoose = document.querySelectorAll('.btn-choose');
 const btnBack = document.querySelectorAll('.go-back');
 
 let modalFormHasOpened = false;
-let formSent = false;
 
 function formAddError(input) {
     input.parentElement.classList.add('_error');
@@ -26,52 +25,48 @@ function clearInputs() {
     }
 }
 
-if (submitButton) {
-    submitButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      if (formSent) {
-        return false;
+function formSubmitHandler(event) {
+    event.preventDefault();
+    let formType = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
+    let form = document.querySelector(`.${formType}-form`);
+    let inputs = {
+      'name': document.querySelector(`.${formType}-form-name`),
+      'phone': document.querySelector(`.${formType}-form-phone`),
+      'message': document.querySelector(`.${formType}-form-message`)
+    }; 
+    formRemoveErrors(inputs);
+    let errors = false;
+    for (const [key, input] of Object.entries(inputs)) {
+      if (input.value.trim() == '') {
+          errors = true;
+          formAddError(input);
       }
-      let formType = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
-      let form = document.querySelector(`.${formType}-form`);
-      let inputs = {
-        'name': document.querySelector(`.${formType}-form-name`),
-        'phone': document.querySelector(`.${formType}-form-phone`),
-        'message': document.querySelector(`.${formType}-form-message`)
-      }; 
-      formRemoveErrors(inputs);
-      let errors = false;
-      for (const [key, input] of Object.entries(inputs)) {
-        if (input.value.trim() == '') {
-            errors = true;
-            formAddError(input);
-        }
-      }
-      if (!errors) {
-        let params = new FormData(form);
-        fetch('/mail.php', {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json'
-          },
-          body: params
-        })
-        .then(response => {
-            if (modalFormHasOpened) {
-              modalBuy.classList.remove('active');
-            }
-            modalSendMessage.classList.add('active');
-            formSent = true;
-            clearInputs();
-        })
-        .catch((error) => {
-          console.log('Form sending error', error);
-        });
-      } else {
-        return false;
-      }
-    });
+    }
+    if (!errors) {
+      let params = new FormData(form);
+      fetch('/mail.php', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: params
+      })
+      .then(response => {
+          if (modalFormHasOpened) {
+            modalBuy.classList.remove('active');
+          }
+          modalSendMessage.classList.add('active');
+          clearInputs();
+      })
+      .catch((error) => {
+        console.log('Form sending error', error);
+      });
+    } else {
+      return false;
+    }
 }
+
+orderFormSubmitButton.addEventListener('click', formSubmitHandler, once);
 
 //открыть форму выбора кондиционера
 if (btnChoose) {
@@ -81,6 +76,8 @@ if (btnChoose) {
             e.stopPropagation();
             modalBuy.classList.add('active');
             modalFormHasOpened = true;
+            const measureFormSubmitButton = document.querySelector('.measure-form-btn');
+            measureFormSubmitButton.addEventListener('click', formSubmitHandler, once);
         });
     });
 }
@@ -95,6 +92,7 @@ if (btnBack) {
             modalBuy.classList.remove('active');
             modalSignUp.classList.remove('active');
             modalSendMessage.classList.remove('active');
+            submitButton = document.querySelector('.order-form-btn');
         });
     })
 }
