@@ -13,8 +13,8 @@ function formAddError(input) {
     input.classList.add('_error');
 }
 
-function formRemoveErrors() {
-    for (const [key, input] of Object.entries(inputs)) {
+function formRemoveErrors(inputsObject) {
+    for (const [key, input] of Object.entries(inputsObject)) {
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
     }
@@ -39,7 +39,7 @@ if (submitButton) {
         'phone': document.querySelector(`.${formType}-form-phone`),
         'message': document.querySelector(`.${formType}-form-message`)
       }; 
-      formRemoveErrors();
+      formRemoveErrors(inputs);
       let errors = false;
       for (const [key, input] of Object.entries(inputs)) {
         if (input.value.trim() == '') {
