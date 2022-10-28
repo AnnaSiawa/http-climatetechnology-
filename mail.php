@@ -22,16 +22,10 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Заявка с сайта';
 $mail->Body = '' . $name . ' ' . ' оставил(a) заявку, номер телефона: ' . $phone . '<br>Адрес этого пользователя: ' . $address . '<br>Сообщение пользователя: ' . $message;
 
-if (!$mail->send()) {
-	$message = 'ошибка';
-} else {
-	$message = 'Данные отправлены';
-//	header('location: index.php');
+$success = false;
+if ($mail->send()) {
+	$success = true;
 }
-
-$response = ['message' => $message];
-
-header('Content-type: application/json');
-echo json_encode($response, JSON_UNESCAPED_UNICODE);
+header("Location: index.php?success={$success}");
 ?>
 
