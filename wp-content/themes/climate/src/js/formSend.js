@@ -60,11 +60,9 @@ if (submitButton) {
           }
         })
         .then(response => {
-            if (response.success) {
-                modalSendMessage.classList.add('active');
-                formSent = true;
-                clearInputs();
-            }
+            modalSendMessage.classList.add('active');
+            formSent = true;
+            clearInputs();
         })
         .catch((error) => {
           console.log('Form sending error', error);
