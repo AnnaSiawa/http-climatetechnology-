@@ -64,6 +64,10 @@ function sendForm(formType) {
     }
 }
 
+const once = {
+  once: true
+};
+
 measureFormSubmitButton.addEventListener('click', (event) => {
   event.preventDefault();
   let type = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
