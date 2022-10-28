@@ -1,17 +1,11 @@
-const form = document.getElementById('form-mail');
-const submitButton = document.querySelector('#button');
+const submitButton = document.querySelector('.send-form-btn');
 const modalBuy = document.querySelector('.modal-buy');
 const modalSignUp = document.querySelector('.modal-sign-up');
 const modalSendMessage = document.querySelector('.modal-send-message');
 const btnChoose = document.querySelectorAll('.btn-choose');
 const btnBack = document.querySelectorAll('.go-back');
 
-const inputs = {
-    'name': document.querySelector('#name'),
-    'phone': document.querySelector('#phone'),
-    'message': document.querySelector('#message')
-};
-
+let modalFormHasOpened = false;
 let formSent = false;
 
 function formAddError(input) {
@@ -38,6 +32,13 @@ if (submitButton) {
       if (formSent) {
         return false;
       }
+      let formType = event.target.classList.contains('measure-form-btn') ? 'measure' : 'order';
+      let form = document.querySelector(`.${formType}-form`);
+      let inputs = {
+        'name': document.querySelector(`.${formType}-form-name`),
+        'phone': document.querySelector(`.${formType}-form-phone`),
+        'message': document.querySelector(`.${formType}-form-message`)
+      }; 
       formRemoveErrors();
       let errors = false;
       for (const [key, input] of Object.entries(inputs)) {
@@ -56,6 +57,9 @@ if (submitButton) {
           body: params
         })
         .then(response => {
+            if (modalFormHasOpened) {
+              modalBuy.classList.remove('active');
+            }
             modalSendMessage.classList.add('active');
             formSent = true;
             clearInputs();
@@ -76,6 +80,7 @@ if (btnChoose) {
         item.addEventListener('click', e => {
             e.stopPropagation();
             modalBuy.classList.add('active');
+            modalFormHasOpened = true;
         });
     });
 }
