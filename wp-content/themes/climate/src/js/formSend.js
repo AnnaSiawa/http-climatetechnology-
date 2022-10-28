@@ -1,13 +1,10 @@
+const form = document.getElementById('form-mail');
 const submitButton = document.querySelector('#button');
 const modalBuy = document.querySelector('.modal-buy');
 const modalSignUp = document.querySelector('.modal-sign-up');
 const modalSendMessage = document.querySelector('.modal-send-message');
 const btnChoose = document.querySelectorAll('.btn-choose');
 const btnBack = document.querySelectorAll('.go-back');
-
-const xhrHeaders = {
-    'Accept': 'application/json'
-};
 
 const inputs = {
     'name': document.querySelector('#name'),
@@ -50,14 +47,13 @@ if (submitButton) {
         }
       }
       if (!errors) {
+        let params = new FormData(form);
         fetch('/mail.php', {
           method: 'POST',
-          headers: xhrHeaders,
-          body: {
-            name: inputs.name.value.trim(),
-            phone: inputs.phone.value.trim(),
-            message: inputs.message.value.trim()
-          }
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: params
         })
         .then(response => {
             modalSendMessage.classList.add('active');
