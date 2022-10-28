@@ -1,66 +1,79 @@
-const form = document.getElementById('form-mail');
-let modalBuy = document.querySelector('.modal-buy');
-let modalSignUp = document.querySelector('.modal-sign-up');
-let modalSendMessage = document.querySelector('.modal-send-message');
-let btnChoose = document.querySelectorAll('.btn-choose');
-let btnBack = document.querySelectorAll('.go-back');
+const submitButton = document.querySelector('#button');
+const modalBuy = document.querySelector('.modal-buy');
+const modalSignUp = document.querySelector('.modal-sign-up');
+const modalSendMessage = document.querySelector('.modal-send-message');
+const btnChoose = document.querySelectorAll('.btn-choose');
+const btnBack = document.querySelectorAll('.go-back');
 
-if (form) {
-    form.addEventListener('submit', formSend);
+const xhrHeaders = {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+};
+
+const inputs = {
+    'name': document.querySelector('#name'),
+    'phone': document.querySelector('#phone'),
+    'message': document.querySelector('#message')
+};
+
+let formSent = false;
+
+function formAddError(input) {
+    input.parentElement.classList.add('_error');
+    input.classList.add('_error');
 }
 
-async function formSend(e) {
- // function formSend(e) {
-    e.preventDefault();
-    let error = formValidate(form);
-    let formData = new FormData(form);
-
-    if (error === 0) {
-        let response = await fetch('mail.php', {
-        // let response = fetch('mail.php', {
-            method: 'POST',
-            body: formData
-        });
-        if (response.ok) {
-            let result = await response.json();
-            // let result = response.json();
-            // alert(result.message);
-            modalSignUp.classList.add('active');
-            form.reset();
-        } else {
-            alert('ошибка');
-        }
-    } else {
-        alert('заполните обязательные поля');
+function formRemoveErrors() {
+    for (const [key, input] of Object.entries(inputs)) {
+        input.parentElement.classList.remove('_error');
+        input.classList.remove('_error');
     }
+}
 
-    function formValidate(form) {
-        let error = 0;
-        let formReq = document.querySelectorAll('._req');
+function clearInputs() {
+    for (const [key, input] of Object.entries(inputs)) {
+        input.value = '';
+    }
+}
 
-        for (let i = 0; i < formReq.length; i++) {
-            const input = formReq[i];
-            formRemoveError(input)
-
-
-            if (input.value === '') {
-                formAddError(input);
-                error++;
+if (submitButton) {
+    submitButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (formSentSuccess) {
+        return false;
+      }
+      formRemoveErrors();
+      let errors = false;
+      for (const [key, input] of Object.entries(inputs)) {
+        if (input.value.trim() == '') {
+            errors = true;
+            formAddError(input);
+        }
+      }
+      if (!errors) {
+        fetch('/mail.php', {
+          method: 'POST',
+          headers: xhrHeaders,
+          body: JSON.stringify({
+            name: inputs.name.value.trim(),
+            phone: inputs.phone.value.trim(),
+            message: inputs.message.value.trim()
+          })
+        })
+        .then(response => {
+            if (response.success) {
+                modalSendMessage.classList.add('active');
+                formSent = true;
+                clearInputs();
             }
-
-        }
-        return error;
-    }
-
-     function formAddError(input) {
-         input.parentElement.classList.add('_error');
-         input.classList.add('_error');
-     }
-
-     function formRemoveError(input) {
-         input.parentElement.classList.remove('_error');
-         input.classList.remove('_error');
-     }
+        })
+        .catch((error) => {
+          console.log('Form sending error', error);
+        });
+      } else {
+        return false;
+      }
+    });
 }
 
 //открыть форму выбора кондиционера
