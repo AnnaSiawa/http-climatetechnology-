@@ -10,11 +10,13 @@ $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
 
-$name = $_POST['name'];
-//$serName = $_POST['ser_name'];
-$phone = $_POST['phone'];
-//$address = $_POST['address'];
-$message = $_POST['message'];
+$json = file_get_contents('php://input');
+$request = json_decode($json);
+
+$name = $request['name'];
+$phone = $request['phone'];
+//$address = $request['address'];
+$message = $request['message'];
 
 $mail->setFrom('annashursh1992@gmail.com'); // от кого будет уходить письмо?
 $mail->addAddress('anya.shurshalova@mail.ru');     // Кому будет уходить письмо
@@ -22,14 +24,9 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Заявка с сайта';
 $mail->Body = '' . $name . ' ' . ' оставил(a) заявку, номер телефона: ' . $phone . '<br>Адрес этого пользователя: ' . 'не указан' . '<br>Сообщение пользователя: ' . $message;
 
-$success = false;
-$result = $mail->send();
-if ($mail->send()) {
-	$success = true;
-}
+$success = $mail->send();
 $response = [
-	'success' => $success,
-	'result' => $result
+	'success' => $success
 ];
 
 header('Content-type: application/json');
