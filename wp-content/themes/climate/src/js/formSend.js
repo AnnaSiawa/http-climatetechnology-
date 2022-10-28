@@ -39,7 +39,7 @@ function clearInputs() {
 if (submitButton) {
     submitButton.addEventListener('click', (event) => {
       event.preventDefault();
-      if (formSentSuccess) {
+      if (formSent) {
         return false;
       }
       formRemoveErrors();
