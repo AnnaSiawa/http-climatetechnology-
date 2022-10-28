@@ -54,7 +54,7 @@
 			</div>
 
 			<div class="measure-screen-form container">
-				<form id="form-mail">
+				<form class="order-form">
 					<div class="input">
 						<div class="input-name">Имя</div>
 						<label for="name"></label>
@@ -62,7 +62,7 @@
 							type="text"
 							autocomplete="off"
 							name="name"
-							id="name"
+							class="order-form-name"
 							placeholder="Ваше имя"
 							class="_req"/>
 					</div>
@@ -74,7 +74,7 @@
 							type="text"
 							autocomplete="off"
 							name="phone"
-							id="phone"
+							class="order-form-phone"
 							placeholder="Ваш номер телефона"
 							class="_req"/>
 					</div>
@@ -83,7 +83,7 @@
 						<div class="input-name">Сообщение</div>
 						<textarea
 							name="message"
-							id="message"
+							class="order-form-message"
 							placeholder="Сообщение"></textarea>
 					</div>
 
@@ -98,9 +98,9 @@
 
 					<div class="measure-screen__btn btn">
 						<button
-							class="button"
+							class="button send-form-btn order-form-btn"
 							type="submit"
-							id="button">
+						>
 							Отправить
 						</button>
 					</div>
