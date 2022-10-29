@@ -9,8 +9,8 @@ add_theme_support('post-thumbnails');
 add_action('after_setup_theme', 'crb_load');
 function crb_load()
 {
-    require_once('vendor/autoload.php');
-    \Carbon_Fields\Carbon_Fields::boot();
+    //require_once('vendor/autoload.php');
+    //\Carbon_Fields\Carbon_Fields::boot();
 }
 
 // Scripts and styles
