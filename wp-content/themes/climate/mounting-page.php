@@ -14,7 +14,9 @@
 			<div class="inner">
 
 				<div class="title-block">
-					<h2 class="container scroll-title">Монтаж кондиционеров</h2>
+					<h2 class="container">
+						<span class="scroll-title">Монтаж кондиционеров</span>
+					</h2>
 				</div>
 
 				<div class="title-block">
