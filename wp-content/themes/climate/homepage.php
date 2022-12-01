@@ -480,19 +480,24 @@
 									d="M32.8,66H23c-1.1,0-2-0.9-2-2V54c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v9.8C35,65,34,66,32.8,66z"></path><path
 									class="st2 choose-svg-elem-8 scroll-logo"
 									d="M33,87H23c-1.1,0-2-0.9-2-2V75c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v10C35,86.1,34.1,87,33,87z"></path><path
-									class="st16 choose-svg-elem-9 scroll-logo" d="M79,101V24H28c-1.1,0-2,0.9-2,2v75H79z"></path><rect
-									class="st1 choose-svg-elem-10 scroll-logo" height="83" width="68" x="31" y="29"></rect><rect
-									class="st2 scroll-logo choose-svg-elem-11" height="83" width="68" x="31" y="29"></rect><line
+									class="st16 choose-svg-elem-9 scroll-logo"
+									d="M79,101V24H28c-1.1,0-2,0.9-2,2v75H79z"></path><rect
+									class="st1 choose-svg-elem-10 scroll-logo" height="83" width="68" x="31"
+									y="29"></rect><rect
+									class="st2 scroll-logo choose-svg-elem-11" height="83" width="68" x="31"
+									y="29"></rect><line
 									class="st34 choose-svg-elem-12 scroll-logo" x1="63" x2="75" y1="53" y2="53"></line><line
 									class="st34 choose-svg-elem-13 scroll-logo" x1="63" x2="87" y1="48" y2="48"></line><path
 									class="st14 choose-svg-elem-14 scroll-logo"
 									d="M54,58H44c-1.1,0-2-0.9-2-2V46c0-1.1,0.9-2,2-2h10c1.1,0,2,0.9,2,2v10C56,57.1,55.1,58,54,58z"></path><polyline
-									class="st2 choose-svg-elem-15 scroll-logo" points="45.3,51.7 48.2,54.4 53.9,48.6 "></polyline><line
+									class="st2 choose-svg-elem-15 scroll-logo"
+									points="45.3,51.7 48.2,54.4 53.9,48.6 "></polyline><line
 									class="st34 choose-svg-elem-16 scroll-logo" x1="63" x2="75" y1="74" y2="74"></line><line
 									class="st34 choose-svg-elem-17 scroll-logo" x1="63" x2="87" y1="68" y2="68"></line><path
 									class="st14 choose-svg-elem-18 scroll-logo"
 									d="M54,78H44c-1.1,0-2-0.9-2-2V66c0-1.1,0.9-2,2-2h9.8c1.2,0,2.2,1,2.2,2.2V76C56,77.1,55.1,78,54,78z"></path><polyline
-									class="st2 choose-svg-elem-19 scroll-logo" points="45.3,71.9 48.2,74.6 53.9,68.9 "></polyline><line
+									class="st2 choose-svg-elem-19 scroll-logo"
+									points="45.3,71.9 48.2,74.6 53.9,68.9 "></polyline><line
 									class="st34 choose-svg-elem-20 scroll-logo" x1="63" x2="75" y1="94" y2="94"></line><line
 									class="st34 choose-svg-elem-21 scroll-logo" x1="63" x2="87" y1="89" y2="89"></line><path
 									class="st14 choose-svg-elem-22 scroll-logo"
@@ -507,21 +512,26 @@
 										points="111.4,50.1 73.8,87.7 54.1,94.6 61,74.9 98.6,37.3  "></polygon><rect
 										class="st18 choose-svg-elem-28 scroll-logo" height="18.1"
 										transform="matrix(0.7071 -0.7071 0.7071 0.7071 -18.9596 79.2808)" width="53.2"
-										x="59.6" y="53.5"></rect><rect class="st16 choose-svg-elem-29 scroll-logo" height="5.3"
+										x="59.6" y="53.5"></rect><rect class="st16 choose-svg-elem-29 scroll-logo"
+																	   height="5.3"
 																	   transform="matrix(0.7071 -0.7071 0.7071 0.7071 -20.8293 83.7946)"
 																	   width="53.2" x="64.1" y="64.4"></rect><polygon
-										class="st3 choose-svg-elem-30 scroll-logo" points="57.1,86 54.1,94.4 62.5,91.4  "></polygon><polygon
+										class="st3 choose-svg-elem-30 scroll-logo"
+										points="57.1,86 54.1,94.4 62.5,91.4  "></polygon><polygon
 										class="st2 choose-svg-elem-31 scroll-logo"
 										points="111.4,50.1 73.8,87.7 54.1,94.6 61,74.9 98.6,37.3  "></polygon><path
 										class="st13 choose-svg-elem-32 scroll-logo"
 										d="M111.4,50.1l6-6c1.7-1.7,1.7-4.4,0-6l-6.8-6.8c-1.7-1.7-4.4-1.7-6,0l-6,6L111.4,50.1z"></path><path
 										class="st2 choose-svg-elem-33 scroll-logo"
 										d="M111.4,50.1l6-6c1.7-1.7,1.7-4.4,0-6l-6.8-6.8c-1.7-1.7-4.4-1.7-6,0l-6,6L111.4,50.1z"></path><line
-										class="st2 choose-svg-elem-34 scroll-logo" x1="80.6" x2="106.9" y1="73.4" y2="47.1"></line><line
-										class="st2 choose-svg-elem-35 scroll-logo" x1="70" x2="76.1" y1="84" y2="77.9"></line><rect
+										class="st2 choose-svg-elem-34 scroll-logo" x1="80.6" x2="106.9" y1="73.4"
+										y2="47.1"></line><line
+										class="st2 choose-svg-elem-35 scroll-logo" x1="70" x2="76.1" y1="84"
+										y2="77.9"></line><rect
 										class="st1 choose-svg-elem-36 scroll-logo" height="18.1"
 										transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.5282 86.9153)" width="7.4"
-										x="100.9" y="35.1"></rect><rect class="st16 choose-svg-elem-37 scroll-logo" height="18.1"
+										x="100.9" y="35.1"></rect><rect class="st16 choose-svg-elem-37 scroll-logo"
+																		height="18.1"
 																		transform="matrix(0.7071 -0.7071 0.7071 0.7071 -0.5282 86.9153)"
 																		width="7.4" x="100.9" y="35.1"></rect><rect
 										class="st2 choose-svg-elem-38 scroll-logo" height="18.1"
@@ -1303,34 +1313,33 @@
 						<div class="examples-swiper swiper">
 							<!-- Оболочка -->
 							<div class="examples-swiper__wrapper swiper-wrapper">
-								<!--Слайды -->
-								<div class="examples__slide swiper-slide">
-									<!-- внутренний контент слайда -->
-									<div class="examples-swiper__item item">
-										<div class="examples-swiper__img">
-											<img alt="examples-swiper-img"
-												 src="<?php bloginfo('template_url'); ?>/dist/images/example1.png">
+								<?php
+								global $post;
+
+								$myposts = get_posts([
+									'numberposts' => -1
+								]);
+
+								if ($myposts) {
+									foreach ($myposts as $post) {
+										setup_postdata($post);
+										?>
+										<div class="examples__slide swiper-slide">
+											<!-- внутренний контент слайда -->
+											<div class="examples-swiper__item item">
+												<div class="examples-swiper__img">
+<!--													<img alt="examples-swiper-img"-->
+<!--														 src="--><?php //bloginfo('template_url'); ?><!--/dist/images/example2.png">-->
+
+													<?php the_post_thumbnail(
+														array(380, 250)
+													); ?>
+												</div>
+											</div>
 										</div>
-									</div>
-								</div>
-								<div class="examples__slide swiper-slide">
-									<!-- внутренний контент слайда -->
-									<div class="examples-swiper__item item">
-										<div class="examples-swiper__img">
-											<img alt="examples-swiper-img"
-												 src="<?php bloginfo('template_url'); ?>/dist/images/example2.png">
-										</div>
-									</div>
-								</div>
-								<div class="examples__slide swiper-slide">
-									<!-- внутренний контент слайда -->
-									<div class="examples-swiper__item item">
-										<div class="examples-swiper__img">
-											<img alt="examples-swiper-img"
-												 src="<?php bloginfo('template_url'); ?>/dist/images/example2.png">
-										</div>
-									</div>
-								</div>
+									<?php }
+								}
+								wp_reset_postdata(); ?>
 							</div>
 						</div>
 					</div>

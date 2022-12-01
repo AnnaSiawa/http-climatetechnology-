@@ -46,8 +46,8 @@
 				</div>
 
 				<div class="mobile-menu-cell">
-					<a href="tel:+74832300126">
-						<span>Брянск, тел. 30-01-26</span>
+					<a href="tel:<?php the_field('phone-link') ?>">
+						<span>Брянск, тел. <?php the_field('phone') ?></span>
 						<span class="mobile-menu-cell-svg">
 							<svg
 								inkscape:export-ydpi="576"
@@ -383,12 +383,12 @@
 					<div class="contacts-menu" onclick="">
 						<div class="">
 							<div class="footer__subtitle">Контакты</div>
-							<div class="footer__item">Адрес: Россия, г.Брянск, ул.Название</div>
-							<a class="footer__item" href="tel:+74832300126">
-								<div>Телефон: 30-01-26</div>
+<!--							<div class="footer__item">Адрес: --><?php //the_field('address') ?><!--</div>-->
+							<a class="footer__item" href="tel:<?php the_field('phone-link') ?>">
+								<div>Телефон: <?php the_field('phone') ?></div>
 							</a>
-							<a class="footer__item" href="mailto:nazvanie@mail.ru">
-								<div>E-mail: nazvanie@mail.ru</div>
+							<a class="footer__item" href="mailto:<?php the_field('e-mail') ?>">
+								<div>E-mail: <?php the_field('e-mail') ?></div>
 							</a>
 							<div class="footer__item">График работы: пн-вс с 9:00 до 18:00</div>
 						</div>
@@ -411,27 +411,27 @@
 						<li><a href="/products" class="nav-item">Каталог</a></li>
 						<li class="nav-item contacts-item">Контакты</li>
 					</ul>
-					<a href="tel:+74832300126" class="desktop-menu__cell">
-						<span>Брянск, тел. 30-01-26</span>
+					<a href="tel:<?php the_field('phone-link') ?>" class="desktop-menu__cell">
+						<span>Брянск, тел. <?php the_field('phone') ?></span>
 						<span>
 							<svg
-	inkscape:export-ydpi="576"
-	inkscape:export-xdpi="576"
-	inkscape:export-filename="/media/taufikramadhan/Data/Tr Design Studio/Project Design/TR Creative Design/Icon Design/Project Hiring/Icon Icons/009 -  Hotel And Holidays/Send/4 - Filled Line/SVG/20 - Telephone.png"
-	width="64pt"
-	height="64pt"
-	viewBox="0 0 22.577778 22.577778"
-	version="1.1"
-	id="svg831"
-	inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
-	sodipodi:docname="20 - Telephone.svg"
-	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-	xmlns="http://www.w3.org/2000/svg"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:cc="http://creativecommons.org/ns#"
-	xmlns:dc="http://purl.org/dc/elements/1.1/">
+								inkscape:export-ydpi="576"
+								inkscape:export-xdpi="576"
+								inkscape:export-filename="/media/taufikramadhan/Data/Tr Design Studio/Project Design/TR Creative Design/Icon Design/Project Hiring/Icon Icons/009 -  Hotel And Holidays/Send/4 - Filled Line/SVG/20 - Telephone.png"
+								width="64pt"
+								height="64pt"
+								viewBox="0 0 22.577778 22.577778"
+								version="1.1"
+								id="svg831"
+								inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+								sodipodi:docname="20 - Telephone.svg"
+								xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+								xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:svg="http://www.w3.org/2000/svg"
+								xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+								xmlns:cc="http://creativecommons.org/ns#"
+								xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
 	  id="defs825">
     <pattern
@@ -736,8 +736,6 @@
 
 			</div>
 		</div>
-
-
 	</header>
 
 

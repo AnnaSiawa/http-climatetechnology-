@@ -32,12 +32,12 @@
 			</div>
 			<div class="footer__block">
 				<div class="footer__subtitle">Контакты</div>
-				<div class="footer__item">Адрес: Россия, г.Брянск, ул.Название</div>
-				<a class="footer__item" href="tel:+74832300126">
-					<div>Телефон: 30-01-26</div>
+<!--				<div class="footer__item">Адрес: --><?php //the_field('address') ?><!--</div>-->
+				<a class="footer__item" href="tel:<?php the_field('phone-link') ?>">
+					<div>Телефон: <?php the_field('phone') ?></div>
 				</a>
-				<a class="footer__item" href="mailto:nazvanie@mail.ru">
-					<div>E-mail: nazvanie@mail.ru</div>
+				<a class="footer__item" href="mailto:<?php the_field('e-mail') ?>">
+					<div>E-mail: <?php the_field('e-mail') ?></div>
 				</a>
 				<div class="footer__item">График работы: пн-вс с 9:00 до 18:00</div>
 			</div>

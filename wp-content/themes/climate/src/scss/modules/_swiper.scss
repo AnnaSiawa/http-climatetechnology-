@@ -219,12 +219,24 @@
   @media all and (min-width: $breakpoint-tablet-L) {
     padding: 50px 0;
   }
+
+  &__img {
+    img {
+      object-fit: cover;
+    }
+  }
 }
 
 .services-swiper {
   .swiper-wrapper {
     @media all and (min-width: $breakpoint-tablet-L) {
       height: initial;
+    }
+  }
+
+  &__img {
+    img {
+      object-fit: contain;
     }
   }
 }
@@ -247,7 +259,6 @@
       height: 100%;
       left: 0;
       top: 0;
-      object-fit: cover;
       object-position: center;
       transition: 0.5s;
 

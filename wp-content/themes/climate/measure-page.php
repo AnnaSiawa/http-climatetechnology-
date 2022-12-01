@@ -27,7 +27,7 @@
 									<div class="services-swiper__item">
 										<div class="services-swiper__img">
 											<img
-												src="https://st.depositphotos.com/2547675/3009/i/450/depositphotos_30094505-stock-photo-time-clock.jpg"
+												src="<?php bloginfo('template_url'); ?>/dist/images/measure1.jpg"
 												alt="services-img">
 										</div>
 									</div>
@@ -37,7 +37,7 @@
 									<div class="services-swiper__item">
 										<div class="services-swiper__img">
 											<img
-												src="https://mirpozitiva.ru/wp-content/uploads/2019/11/1472042719_15.jpg"
+												src="<?php bloginfo('template_url'); ?>/dist/images/measure2.jpg"
 												alt="services-img">
 										</div>
 									</div>
