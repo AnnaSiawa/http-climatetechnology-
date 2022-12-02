@@ -1,10 +1,16 @@
+<?php
+$title = "замер";
+
+extract($params);
+?>
+
 <div class="measure-screen homepage-screen">
 	<div class="measure-screen__row">
 		<div class="inner">
 
 			<div class="title-block">
 				<h2 class="container">
-					<span class="scroll-title">записаться на замер</span>
+					<span class="scroll-title">записаться на <?= $title ?></span>
 					<span>
 						<svg id="Layer_1" style="enable-background:new 0 0 128 128;"
 							 version="1.1" viewBox="0 0 128 128" xml:space="preserve"

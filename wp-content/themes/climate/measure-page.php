@@ -87,7 +87,12 @@
 
 	<?= Component::render('arrow'); ?>
 
-	<?= Component::render('measure'); ?>
+	<?= Component::render(
+		'measure',
+		[
+			'title' => 'замер'
+		]
+	); ?>
 
 </div>
 
