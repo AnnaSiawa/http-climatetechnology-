@@ -14,12 +14,13 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 //$address = $_POST['address'];
 $message = $_POST['message'];
+$title = $_POST['title'];
 
-$mail->setFrom('annashursh1992@gmail.com'); // от кого будет уходить письмо?
-$mail->addAddress('tklimat32@yandex.ru');     // Кому будет уходить письмо
-$mail->isHTML(true);                                  // Set email format to HTML
+$mail->setFrom('t-klimat32@t-klimat32.ru'); // от кого будет уходить письмо?
+$mail->addAddress('tklimat32@yandex.ru');   // Кому будет уходить письмо
+$mail->isHTML(true);                        // Set email format to HTML
 $mail->Subject = 'Заявка с сайта';
-$mail->Body = '' . $name . ' ' . ' оставил(a) заявку, номер телефона: ' . $phone . '<br>Адрес этого пользователя: ' . 'не указан' . '<br>Сообщение пользователя: ' . $message;
+$mail->Body = '' . $name . ' ' . ' оставил(a) заявку, номер телефона: ' . $phone . '<br>Адрес этого пользователя: ' . 'не указан' . '<br>Сообщение пользователя: ' . $message . '<br>Заинтересовавшая модель кондиционера: ' . $title;
 
 $success = $mail->send();
 $response = [

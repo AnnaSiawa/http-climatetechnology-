@@ -13,8 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 	<!--	<link rel="preload" href="https://yastatic.net/jquery/3.3.1/jquery.min.js" as="script"/>-->
-	<link rel="preload" href="/wp-content/themes/myusa/dist/index.css" as="style"/>
-	<link rel="preload" href="/wp-content/themes/myusa/dist/index.js" as="script"/>
+	<link rel="preload" href="/wp-content/themes/climate/dist/index.css" as="style"/>
+	<link rel="preload" href="/wp-content/themes/climate/dist/index.js" as="script"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

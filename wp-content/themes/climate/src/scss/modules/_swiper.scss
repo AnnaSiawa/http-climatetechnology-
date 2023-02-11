@@ -74,6 +74,8 @@
     font-size: 20px;
     line-height: 23px;
     @media all and (min-width: $breakpoint-tablet-L) {
+      min-height: 84px;
+      height: 100%;
       margin: 25px 0 19px 0;
       font-size: 34px;
       line-height: 38px;

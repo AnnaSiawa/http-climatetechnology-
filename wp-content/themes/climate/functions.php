@@ -44,3 +44,16 @@ function getStatesForJS()
 
 // Контроллер компонентов
 require_once __DIR__ . '/components/components-controller.php';
+
+
+// Виджеты
+//add_action( 'widgets_init', 'register_moy_widgets' );
+//function register_moy_widgets(){
+//	register_sidebar( array(
+//		'name' => "...боковая панель сайта",
+//		'id' => 'moy-sidebar-left',
+//		'description' => 'Виджеты будут показаны в колонке сайта, либо в требуемом месте во фронтэнде...',
+//		'before_title' => '<h2>', // возможно изменить на div class="widgettitle" - либо какой-нить id колассы
+//		'after_title' => '</h2>'
+//	) );
+//}

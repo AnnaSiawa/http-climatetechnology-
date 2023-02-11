@@ -32,7 +32,7 @@
 			</div>
 			<div class="footer__block">
 				<div class="footer__subtitle">Контакты</div>
-<!--				<div class="footer__item">Адрес: --><?php //the_field('address') ?><!--</div>-->
+				<!--				<div class="footer__item">Адрес: --><?php //the_field('address') ?><!--</div>-->
 				<a class="footer__item" href="tel:<?php the_field('phone-link') ?>">
 					<div>Телефон: <?php the_field('phone') ?></div>
 				</a>
@@ -48,13 +48,20 @@
 <div class="modal modal-buy">
 	<div class="modal__wrap">
 		<div class="modal__inner">
-			<h2>Выбранный кондиционер Выбранный кондиционер Выбранный кондиционер</h2>
-			<div class="modal__disc">Если вас заинтересовала данная модель, введите ваши данные, чтобы мы&nbsp;могли
-				связаться с&nbsp;вами
-			</div>
+			<!--			<h2>Выбранный кондиционер</h2>-->
+			<!--			<div class="modal__disc">Если вас заинтересовала данная модель, введите ваши данные, чтобы мы&nbsp;могли-->
+			<!--				связаться с&nbsp;вами-->
+			<!--			</div>-->
 
 			<div class="measure-screen-form container">
 				<form class="order-form">
+
+					<h2>Выбранный кондиционер</h2>
+					<input name="title" type="hidden" value="Выбранный кондиционер"/>
+					<div class="modal__disc">Если вас заинтересовала данная модель, введите ваши данные, чтобы мы&nbsp;могли
+						связаться с&nbsp;вами
+					</div>
+
 					<div class="input">
 						<div class="input-name">Имя</div>
 						<label for="name"></label>

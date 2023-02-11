@@ -555,8 +555,8 @@
 												 src="<?php bloginfo('template_url'); ?>/dist/images/conditioner1.png">
 										</div>
 										<div class="product-swiper__content">
-											<div class="product-swiper__title">Кондиционер Lanzkraft
-												LSWH-20FC1N/LSAH-20FC1N
+											<div class="product-swiper__title">Hisence AS-09UW4RYDDB05 Smart DC
+												Inverter
 											</div>
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
@@ -569,21 +569,24 @@
 												</div>
 												<div class="product-swiper__detail">
 													<ul class="product-swiper__list">
-														<li class="product-swiper__item">Тип: сплит-система</li>
-														<li class="product-swiper__item">Размещение внутреннего блока:
-															настенный
+														<li class="product-swiper__item"><span>Тип компрессора:</span>
+															<span>инверторный</span>
 														</li>
-														<li class="product-swiper__item">Площадь помещения:
-															20&nbsp;кв.м
+														<li class="product-swiper__item"><span>Размещение внутреннего блока:</span>
+															<span>настенный</span>
 														</li>
-														<li class="product-swiper__item">Тип фреона: R-410A</li>
+														<li class="product-swiper__item"><span>Площадь помещения:</span>
+															<span>27&nbsp;кв.м</span>
+														</li>
 													</ul>
 												</div>
 											</div>
 
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
-													<div class="product-swiper__disk_title">Размеры</div>
+													<div class="product-swiper__disk_title">Дополнительные
+														характиристики
+													</div>
 													<div class="product-swiper__disk_arrow">
 														<img alt="product-swiper-img"
 															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
@@ -591,20 +594,23 @@
 												</div>
 												<div class="product-swiper__detail">
 													<ul class="product-swiper__list">
-														<li class="product-swiper__item">Высота внутреннего
-															блока/внешнего блока: 27&nbsp;см/45.8&nbsp;см
+														<li class="product-swiper__item"><span>Уровень шума:</span>
+															<span>23.5 - 40.5 дБ</span>
 														</li>
-														<li class="product-swiper__item">Ширина внутреннего
-															блока/внешнего блока: 72&nbsp;см/63.5&nbsp;см
+														<li class="product-swiper__item">
+															<span>Мощность кондиционера:</span> <span>9 BTU</span>
 														</li>
-														<li class="product-swiper__item">Глубина внутреннего
-															блока/внешнего блока: 20.1&nbsp;см/24&nbsp;см
+														<li class="product-swiper__item"><span>Режим работы:</span>
+															<span>охлаждение, обогрев</span>
+														</li>
+														<li class="product-swiper__item"><span>Поддержка Wi-Fi:</span>
+															<span>да</span>
 														</li>
 													</ul>
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button class="btn-choose">Купить за 24 990 ₽</button>
+												<button class="btn-choose">Купить за <span>30 190 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -615,12 +621,10 @@
 									<div class="product-swiper__item item">
 										<div class="product-swiper__img">
 											<img alt="product-swiper-img"
-												 src="<?php bloginfo('template_url'); ?>/dist/images/conditioner3.png">
+												 src="<?php bloginfo('template_url'); ?>/dist/images/conditioner1.png">
 										</div>
 										<div class="product-swiper__content">
-											<div class="product-swiper__title">Кондиционер Lanzkraft
-												LSWH-20FC1N/LSAH-20FC1N
-											</div>
+											<div class="product-swiper__title">FUNAI RACI-EM35HP.D03</div>
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
 													<div class="product-swiper__disk_title">Основные характеристики
@@ -632,21 +636,24 @@
 												</div>
 												<div class="product-swiper__detail">
 													<ul class="product-swiper__list">
-														<li class="product-swiper__item">Тип: сплит-система</li>
-														<li class="product-swiper__item">Размещение внутреннего блока:
-															настенный
+														<li class="product-swiper__item"><span>Тип компрессора:</span>
+															<span>инверторный</span>
 														</li>
-														<li class="product-swiper__item">Площадь помещения:
-															20&nbsp;кв.м
+														<li class="product-swiper__item"><span>Размещение внутреннего блока:</span>
+															<span>настенный</span>
 														</li>
-														<li class="product-swiper__item">Тип фреона: R-410A</li>
+														<li class="product-swiper__item"><span>Площадь помещения:</span>
+															<span>35&nbsp;кв.м</span>
+														</li>
 													</ul>
 												</div>
 											</div>
 
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
-													<div class="product-swiper__disk_title">Размеры</div>
+													<div class="product-swiper__disk_title">Дополнительные
+														характиристики
+													</div>
 													<div class="product-swiper__disk_arrow">
 														<img alt="product-swiper-img"
 															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
@@ -654,20 +661,19 @@
 												</div>
 												<div class="product-swiper__detail">
 													<ul class="product-swiper__list">
-														<li class="product-swiper__item">Высота внутреннего
-															блока/внешнего блока: 27&nbsp;см/45.8&nbsp;см
+														<li class="product-swiper__item">Уровень шума: <span>18 - 33 дБ</span>
 														</li>
-														<li class="product-swiper__item">Ширина внутреннего
-															блока/внешнего блока: 72&nbsp;см/63.5&nbsp;см
+														<li class="product-swiper__item">Мощность кондиционера: <span>12 BTU</span>
 														</li>
-														<li class="product-swiper__item">Глубина внутреннего
-															блока/внешнего блока: 20.1&nbsp;см/24&nbsp;см
+														<li class="product-swiper__item">Режим работы: <span>охлаждение, обогрев</span>
+														</li>
+														<li class="product-swiper__item">Поддержка Wi-Fi: <span>да</span>
 														</li>
 													</ul>
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button class="btn-choose">Купить за 24 990 ₽</button>
+												<button class="btn-choose">Купить за <span>58 491 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -678,12 +684,10 @@
 									<div class="product-swiper__item item">
 										<div class="product-swiper__img">
 											<img alt="product-swiper-img"
-												 src="<?php bloginfo('template_url'); ?>/dist/images/conditional2.webp">
+												 src="<?php bloginfo('template_url'); ?>/dist/images/conditioner1.png">
 										</div>
 										<div class="product-swiper__content">
-											<div class="product-swiper__title">Кондиционер Lanzkraft
-												LSWH-20FC1N/LSAH-20FC1N
-											</div>
+											<div class="product-swiper__title">Kentatsu KSGA26HZRN1/KSRA26HZRN1</div>
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
 													<div class="product-swiper__disk_title">Основные характеристики
@@ -695,21 +699,21 @@
 												</div>
 												<div class="product-swiper__detail">
 													<ul class="product-swiper__list">
-														<li class="product-swiper__item">Тип: сплит-система</li>
-														<li class="product-swiper__item">Размещение внутреннего блока:
-															настенный
+														<li class="product-swiper__item">Тип компрессора: <span>инверторный</span>
 														</li>
-														<li class="product-swiper__item">Площадь помещения:
-															20&nbsp;кв.м
+														<li class="product-swiper__item">Размещение внутреннего блока: <span>настенный</span>
 														</li>
-														<li class="product-swiper__item">Тип фреона: R-410A</li>
+														<li class="product-swiper__item">Площадь помещения: <span>30&nbsp;кв.м</span>
+														</li>
 													</ul>
 												</div>
 											</div>
 
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
-													<div class="product-swiper__disk_title">Размеры</div>
+													<div class="product-swiper__disk_title">Дополнительные
+														характиристики
+													</div>
 													<div class="product-swiper__disk_arrow">
 														<img alt="product-swiper-img"
 															 src="<?php bloginfo('template_url'); ?>/dist/images/close-disk.png">
@@ -717,20 +721,23 @@
 												</div>
 												<div class="product-swiper__detail">
 													<ul class="product-swiper__list">
-														<li class="product-swiper__item">Высота внутреннего
-															блока/внешнего блока: 27&nbsp;см/45.8&nbsp;см
+														<li class="product-swiper__item"><span>Уровень шума:</span>
+															<span>23.5 - 40.5 дБ</span>
 														</li>
-														<li class="product-swiper__item">Ширина внутреннего
-															блока/внешнего блока: 72&nbsp;см/63.5&nbsp;см
+														<li class="product-swiper__item">
+															<span>Мощность кондиционера:</span> <span>9 BTU</span>
 														</li>
-														<li class="product-swiper__item">Глубина внутреннего
-															блока/внешнего блока: 20.1&nbsp;см/24&nbsp;см
+														<li class="product-swiper__item"><span>Режим работы:</span>
+															<span>охлаждение, обогрев</span>
+														</li>
+														<li class="product-swiper__item"><span>Поддержка Wi-Fi:</span>
+															<span>да</span>
 														</li>
 													</ul>
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button class="btn-choose">Купить за 24 990 ₽</button>
+												<button class="btn-choose">Купить за <span>29 000 ₽</span></button>
 											</div>
 										</div>
 									</div>
@@ -1328,8 +1335,9 @@
 											<!-- внутренний контент слайда -->
 											<div class="examples-swiper__item item">
 												<div class="examples-swiper__img">
-<!--													<img alt="examples-swiper-img"-->
-<!--														 src="--><?php //bloginfo('template_url'); ?><!--/dist/images/example2.png">-->
+													<!--													<img alt="examples-swiper-img"-->
+													<!--														 src="-->
+													<?php //bloginfo('template_url'); ?><!--/dist/images/example2.png">-->
 
 													<?php the_post_thumbnail(
 														array(380, 250)
