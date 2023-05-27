@@ -25,7 +25,7 @@
 					<a href="/products">
 						<div class="footer__item">Каталог</div>
 					</a>
-					<a href="#">
+					<a href="/#example-1">
 						<div class="footer__item">Наши работы</div>
 					</a>
 				</div>

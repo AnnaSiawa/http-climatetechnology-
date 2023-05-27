@@ -6,7 +6,7 @@ let activeLi = document.querySelector('#pagination li.current');
 let prevPage = document.querySelector('.pagination-btn-p');
 let nextPage = document.querySelector('.pagination-btn-n');
 
-let notesOnPage = 2; //количество записей на странице
+let notesOnPage = 6; //количество записей на странице
 let countOfItems = Math.ceil(arrSlideLists.length / notesOnPage); //количество страниц пагинации
 
 let items = []; //массив li
@@ -138,5 +138,38 @@ if (slideLists) {
             }
         });
     }
+}
+
+//открыть фильтр товаров при клике по заголовку "Фильтр товаров"
+const filterBlock = document.querySelector('.title-block_filter');
+const filterTitle = document.querySelector('.title-filter');
+const filterArrow = document.querySelector('.filter-arrow');
+
+if (filterTitle) {
+    filterTitle.addEventListener('click', () => {
+        if (filterBlock.classList.contains('visible')) {
+            filterBlock.classList.remove('visible');
+            filterArrow.classList.remove('active');
+        } else {
+            filterBlock.classList.add('visible');
+            filterArrow.classList.add('active');
+        }
+    });
+    filterTitle.addEventListener('mouseover', () => {
+        if (filterBlock.classList.contains('visible')) {
+            filterArrow.classList.remove('animation-down');
+            filterArrow.classList.add('animation-up');
+        } else {
+            filterArrow.classList.remove('animation-up');
+            filterArrow.classList.add('animation-down');
+        }
+    });
+    filterTitle.addEventListener('mouseout', () => {
+        if (filterBlock.classList.contains('visible')) {
+            filterArrow.classList.remove('animation-up');
+        } else {
+            filterArrow.classList.remove('animation-down');
+        }
+    });
 }
 

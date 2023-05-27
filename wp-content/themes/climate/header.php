@@ -47,7 +47,7 @@
 
 				<div class="mobile-menu-cell">
 					<a href="tel:<?php the_field('phone-link') ?>">
-						<span>Брянск, тел. <?php the_field('phone') ?></span>
+						<span>Брянск | <?php the_field('phone') ?></span>
 						<span class="mobile-menu-cell-svg">
 							<svg
 								inkscape:export-ydpi="576"
@@ -376,7 +376,7 @@
 						<li><a href="/measure" class="nav-item">Замеры</a></li>
 						<li><a href="/mounting" class="nav-item">Монтаж</a></li>
 						<li><a href="/service" class="nav-item">Обслуживание</a></li>
-						<li><a href="#" class="nav-item photo-item" data-goto=".examples-screen">Наши работы</a></li>
+						<li><a href="/#example-1" class="nav-item photo-item" data-goto=".examples-screen">Наши работы</a></li>
 						<li><a href="#" class="nav-item contacts-item">Контакты</a></li>
 					</ul>
 
@@ -409,10 +409,11 @@
 							</div>
 						</li>
 						<li><a href="/products" class="nav-item">Каталог</a></li>
+						<li class="nav-item photo-item" data-goto=".examples-screen"><a href="/#example-1">Наши работы</a></li>
 						<li class="nav-item contacts-item">Контакты</li>
 					</ul>
 					<a href="tel:<?php the_field('phone-link') ?>" class="desktop-menu__cell">
-						<span>Брянск, тел. <?php the_field('phone') ?></span>
+						<span><?php the_field('phone') ?></span>
 						<span>
 							<svg
 								inkscape:export-ydpi="576"

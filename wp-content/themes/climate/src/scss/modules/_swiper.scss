@@ -3,13 +3,19 @@
 
 .product-swiper {
 
+  &__item-desc {
+    text-align: center;
+  }
+
   &__item {
     margin-bottom: 2px;
+    text-align: center;
     @media all and (min-width: $breakpoint-tablet-L) {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
     }
+
     span {
       &:last-child {
         max-width: 95px;
@@ -46,6 +52,117 @@
 
   &__content {
     @media all and (min-width: $breakpoint-tablet-L) {
+      flex: 0 1 33%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      height: 100%;
+      margin: 25px 0 19px 0;
+      font-size: 20px;
+      line-height: 38px;
+    }
+    @media all and (min-width: $breakpoint-desktop-M) {
+      margin: 45px 0 19px 0;
+      font-size: 30px;
+      line-height: 42px;
+      min-height: 84px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 270px;
+    margin: 0 auto;
+    @media all and (min-width: $breakpoint-desktop-M) {
+      width: 400px
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__disk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    cursor: pointer;
+    @media all and (min-width: $breakpoint-tablet-L) {
+      margin-bottom: 5px;
+    }
+
+    &_title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 21px;
+      @media all and (min-width: $breakpoint-desktop-M) {
+        font-size: 20px;
+      }
+    }
+
+    &_arrow {
+      width: 25px;
+      transform: rotate(45deg);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      @media all and (min-width: $breakpoint-tablet-S) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &_arrow.active {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__detail {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    transition: all 0.2s ease;
+    @media all and (min-width: $breakpoint-tablet-S) {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__detail.active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s ease;
+  }
+
+  &__btn {
+    margin: 25px auto;
+  }
+}
+
+.choose-screen {
+  .product-swiper__content {
+    @media all and (min-width: $breakpoint-tablet-L) {
       flex: 0 1 50%;
       padding: 0 0 0 60px;
     }
@@ -64,110 +181,6 @@
         height: 100%;
         background-color: $color-dark;
       }
-    }
-  }
-
-  &__title {
-    margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    @media all and (min-width: $breakpoint-tablet-L) {
-      min-height: 84px;
-      height: 100%;
-      margin: 25px 0 19px 0;
-      font-size: 34px;
-      line-height: 38px;
-    }
-    @media all and (min-width: $breakpoint-desktop-M) {
-      margin: 45px 0 19px 0;
-      font-size: 36px;
-      line-height: 42px;
-    }
-  }
-
-  &__disk {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3px;
-    cursor: pointer;
-    @media all and (min-width: $breakpoint-tablet-L) {
-      margin-bottom: 5px;
-    }
-
-    &_title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-      @media all and (min-width: $breakpoint-tablet-L) {
-        font-size: 24px;
-        line-height: 28px;
-      }
-    }
-
-    &_arrow {
-      width: 25px;
-      //transform: rotate(180deg);
-      transform: rotate(45deg);
-      cursor: pointer;
-      transition: all 0.2s ease;
-      @media all and (min-width: $breakpoint-tablet-L) {
-        display: none;
-      }
-
-      img {
-        width: 100%;
-      }
-    }
-
-    &_arrow.active {
-      //transform: rotate(90deg);
-      transform: rotate(360deg);
-    }
-  }
-
-  &__detail {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    width: calc(100% - 30px);
-    margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    transition: all 0.2s ease;
-    @media all and (min-width: $breakpoint-tablet-L) {
-      height: auto;
-      opacity: 1;
-      visibility: visible;
-      margin-bottom: 15px;
-      font-size: 20px;
-      line-height: 23px;
-    }
-    @media all and (min-width: $breakpoint-desktop-M) {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
-
-  &__detail.active {
-    height: auto;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.2s ease;
-  }
-
-  &__btn {
-    margin: 25px auto;
-    @media all and (min-width: $breakpoint-tablet-L) {
-      margin: 20px 0;
-    }
-    @media all and (min-width: $breakpoint-desktop-M) {
-      margin: 35px 0 45px;
     }
   }
 }

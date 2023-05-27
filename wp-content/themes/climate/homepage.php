@@ -558,6 +558,7 @@
 											<div class="product-swiper__title">Hisence AS-09UW4RYDDB05 Smart DC
 												Inverter
 											</div>
+
 											<div class="product-swiper__disk-wrap">
 												<div class="product-swiper__disk">
 													<div class="product-swiper__disk_title">Основные характеристики
@@ -610,7 +611,9 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button class="btn-choose">Купить за <span>30 190 ₽</span></button>
+												<button class="btn-choose">Купить
+<!--													за <span>30 190 ₽</span>-->
+												</button>
 											</div>
 										</div>
 									</div>
@@ -673,7 +676,9 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button class="btn-choose">Купить за <span>58 491 ₽</span></button>
+												<button class="btn-choose">Купить
+<!--													за <span>58 491 ₽</span>-->
+												</button>
 											</div>
 										</div>
 									</div>
@@ -737,7 +742,9 @@
 												</div>
 											</div>
 											<div class="product-swiper__btn btn">
-												<button class="btn-choose">Купить за <span>29 000 ₽</span></button>
+												<button class="btn-choose">Купить
+<!--													за <span>29 000 ₽</span>-->
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1244,7 +1251,7 @@
 
 				<div class="title-block">
 					<h2 class="container">
-						<span class="scroll-title">Наши работы</span>
+						<span class="scroll-title" id="example-1">Наши работы</span>
 						<span>
 							<!--?xml version="1.0" encoding="iso-8859-1"?-->
 							<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

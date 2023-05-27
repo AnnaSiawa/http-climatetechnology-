@@ -28,35 +28,37 @@ window.onload = function () {
         });
 
         //прокрутка до блока Наши работы
-        const itemPhotoScroll = document.querySelector('.photo-item[data-goto]');
-        itemPhotoScroll.addEventListener('click', onItemScrollPhoto);
-
-        function onItemScrollPhoto(e) {
-            const itemPhotoScroll = e.currentTarget;
-            const gotoBlock = document.querySelector(itemPhotoScroll.dataset.goto);
-            if (gotoBlock) {
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
-
-                window.scrollTo({
-                    top: gotoBlockValue - 50,
-                    // behavior: 'smooth'
-                });
-            }
-        }
-
-        document.addEventListener('click', e => {
-            let target = e.target;
-            let itsMenu = target === bodyMenu || bodyMenu.contains(target);
-            let itsIconMenu = target === iconMenu;
-            let menuIsActive = bodyMenu.classList.contains('active');
-
-            if (!itsMenu && !itsIconMenu && menuIsActive) {
-                bodyMenu.classList.toggle('active');
-                iconMenu.classList.toggle('active');
-                menuCell.classList.toggle('active');
-                contactsMenu.classList.remove('active');
-            }
-        });
+        // const itemPhotoScroll = document.querySelectorAll('.photo-item[data-goto]');
+        // itemPhotoScroll.forEach(item => {
+        //     item.addEventListener('click', onItemScrollPhoto);
+        // });
+        //
+        // function onItemScrollPhoto(e) {
+        //     const itemPhotoScroll = e.currentTarget;
+        //     const gotoBlock = document.querySelector(itemPhotoScroll.dataset.goto);
+        //     console.log(gotoBlock);
+        //     if (gotoBlock) {
+        //         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+        //         window.scrollTo({
+        //             top: gotoBlockValue - 50,
+        //             // behavior: 'smooth'
+        //         });
+        //     }
+        // }
+        //
+        // document.addEventListener('click', e => {
+        //     let target = e.target;
+        //     let itsMenu = target === bodyMenu || bodyMenu.contains(target);
+        //     let itsIconMenu = target === iconMenu;
+        //     let menuIsActive = bodyMenu.classList.contains('active');
+        //
+        //     if (!itsMenu && !itsIconMenu && menuIsActive) {
+        //         bodyMenu.classList.toggle('active');
+        //         iconMenu.classList.toggle('active');
+        //         menuCell.classList.toggle('active');
+        //         contactsMenu.classList.remove('active');
+        //     }
+        // });
     }
 
     //contacts mobile and desktop menu

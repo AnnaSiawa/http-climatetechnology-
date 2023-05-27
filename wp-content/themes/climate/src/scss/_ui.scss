@@ -76,12 +76,12 @@ h2 {
   text-transform: uppercase;
   @media all and (min-width: $breakpoint-tablet-L) {
     padding: 35px 70px !important;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 60px;
   }
   @media all and (min-width: $breakpoint-desktop-M) {
     padding: 35px 70px !important;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 69px;
   }
 
@@ -149,7 +149,10 @@ a {
     right: 0;
     top: 15px;
     transform: translateY(-24px);
-    font-size: 24px;
+    font-size: 20px;
+    @media all and (min-width: $breakpoint-desktop-S) {
+      font-size: 24px;
+    }
 
     span, a {
       color: $color-white;
@@ -157,6 +160,7 @@ a {
     }
 
     span {
+
       &:last-child {
         max-width: 58px;
         width: 100%;
