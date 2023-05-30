@@ -16,6 +16,9 @@
 	<link rel="preload" href="/wp-content/themes/climate/dist/index.css" as="style"/>
 	<link rel="preload" href="/wp-content/themes/climate/dist/index.js" as="script"/>
 
+	<!-- External scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
