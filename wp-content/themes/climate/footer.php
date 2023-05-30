@@ -104,6 +104,8 @@
 						]); ?>
 
 					<div class="measure-screen__btn btn">
+						<div class="g-recaptcha" data-sitekey="6LeAnlImAAAAABg6PlBWsw_3KkqlYFzuffvy3YXY"></div>
+                        <br/>
 						<button
 							class="button send-form-btn order-form-btn"
 							type="submit"
